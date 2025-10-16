@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <link rel="stylesheet" href="./output.css" />
+    <script
+      src="https://kit.fontawesome.com/ecf5d3bcbf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="font-abel">
+    <div class="h-screen bg-[url(images/hotel2.jpg)] bg-cover bg-no-repeat">
+      <!--
+      Kod hämtad från: https://tailwindflex.com/@rajesh-maheshwari/navbar-with-sub-menus
+      Jag har modifierat innehåll & utseende
+       -->
+      <header class="px-5 py-3 text-white">
+        <nav class="">
+          <div class="relative flex items-center justify-between">
+            <!-- Logga -->
+            <a
+              class="font-barlow mr-20 text-5xl font-medium text-shadow-lg/50 sm:mr-0"
+              href="index.html"
+            >
+              SALTSTONE HOTEL
+            </a>
+            <!--
+            Kod för hover-animation hämtad från: 
+            https://codepen.io/Marcos-Riverola/pen/poQmRKV?editors=1010 
+            -->
+            <div
+              class="hidden space-x-6 font-medium lg:flex xl:absolute xl:left-1/2 xl:-translate-x-1/2 xl:transform"
+            >
+              <div class="flex space-x-8">
+                <a
+                  href="#"
+                  class="relative py-2 after:absolute after:bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                  >HEM</a
+                >
+                <a
+                  href="#"
+                  class="relative py-2 after:absolute after:bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                  >HOTELLRUM</a
+                >
+                <!-- Trigger för undermeny -- öppnas vid hovring -->
+                <div class="group relative">
+                  <button class="flex items-center py-2">
+                    SPA
+                    <i class="fa-solid fa-chevron-down fa-xs ml-2"></i>
+                  </button>
+                  <!-- Undermeny -->
+                  <div
+                    class="invisible absolute left-0 z-50 mt-2 w-40 rounded-lg bg-zinc-800 px-4 py-2 transition-all duration-300 group-hover:visible"
+                  >
+                    <div class="my-2 border-l-2 border-lime-700 pl-2">
+                      <ul class="space-y-2">
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-2 py-3 hover:bg-zinc-200 hover:font-bold hover:text-black"
+                            >DAGSPA</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="block px-2 py-3 hover:bg-zinc-200 hover:font-bold hover:text-black"
+                            >BEHANDLINGAR</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="#"
+                  class="relative py-2 after:absolute after:bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                  >RESTAURANG</a
+                >
+                <a
+                  href="#"
+                  class="relative py-2 after:absolute after:bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                  >AKTIVITETER</a
+                >
+              </div>
+            </div>
+
+            <div
+              class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+            >
+              <div class="hidden sm:flex sm:items-center">
+                <a
+                  class="btn transition duration-700 ease-in-out hover:scale-110"
+                  href="#"
+                  >KONTAKT</a
+                >
+              </div>
+              <!-- Knapp för dropdown-meny för mindre skärmar -->
+              <div class="lg:hidden">
+                <button
+                  type="button"
+                  class="ml-5 flex items-center"
+                  aria-expanded="false"
+                  id="mobile-menu-button"
+                >
+                  <span class="sr-only">Open main menu</span>
+                  <i class="fa-solid fa-bars fa-2xl"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Dropdown-meny, visa/dölj -->
+          <div
+            class="absolute inset-x-0 mx-3 mt-2 hidden bg-zinc-800 font-medium lg:hidden"
+            id="mobile-menu"
+          >
+            <div class="space-y-1 px-2 pt-2 pb-3">
+              <a
+                href="index.html"
+                class="block rounded-md px-3 py-2 text-base hover:bg-zinc-200 hover:font-bold hover:text-black"
+                >HEM</a
+              >
+              <a
+                href="#"
+                class="block rounded-md px-3 py-2 text-base hover:bg-zinc-200 hover:font-bold hover:text-black"
+                >HOTELLRUM</a
+              >
+              <!-- Undermeny inuti dropdown-menyn -->
+              <div class="relative">
+                <button
+                  class="mobile-dropdown-trigger flex w-full items-center justify-between rounded-md px-3 py-2 text-left text-base font-medium hover:bg-zinc-200 hover:font-bold hover:text-black"
+                >
+                  SPA
+                  <i class="fa-solid fa-chevron-down fa-xs"></i>
+                </button>
+                <div class="mobile-dropdown-content hidden px-4 py-2">
+                  <div class="mb-4 border-l-2 border-lime-700 pl-2">
+                    <ul class="space-y-2">
+                      <li>
+                        <a
+                          href="#"
+                          class="block px-2 py-3 hover:bg-zinc-200 hover:font-bold hover:text-black"
+                          >DAGSPA</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block px-2 py-3 hover:bg-zinc-200 hover:font-bold hover:text-black"
+                          >BEHANDLINGAR</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="block rounded-md px-3 py-2 text-base hover:bg-zinc-200 hover:font-bold hover:text-black"
+                >RESTAURANG</a
+              >
+              <a
+                href="#"
+                class="block rounded-md px-3 py-2 text-base hover:bg-zinc-200 hover:font-bold hover:text-black"
+                >AKTIVITETER</a
+              >
+              <!-- Kontakt-knapp -->
+              <div
+                class="mt-2 flex items-center justify-center border-t-2 border-zinc-400 pt-4 sm:hidden"
+              >
+                <a
+                  class="btn transition duration-700 ease-in-out text-shadow-lg/50 hover:scale-110"
+                  href="#"
+                  >KONTAKT</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Hero -->
+      <div
+        class="flex h-5/6 flex-col place-content-around content-between items-center gap-20 sm:h-8/9"
+      >
+        <div class="flex w-64 flex-col gap-15 sm:w-96">
+          <h1
+            class="text-5xl font-semibold text-white text-shadow-lg/50 sm:text-6xl"
+          >
+            En vistelse nära naturen
+          </h1>
+          <p class="text-2xl text-white text-shadow-lg/50">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dicta
+            expedita eius ducimus numquam saepe.
+          </p>
+          <a
+            class="btn mx-auto self-start border-0 bg-white px-8 py-4 text-3xl transition duration-700 ease-in-out hover:scale-110"
+            href=""
+            >BOKA NU</a
+          >
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <i class="fa-solid fa-chevron-down fa-2xl" style="color: #ffffff"></i>
+      </div>
+    </div>
+    <main class="mx-10 mt-10 mb-5">
+      <!-- Behållare för cards -->
+      <div class="flex flex-col gap-x-5 lg:grid lg:grid-cols-2">
+        <!-- Card 1 -->
+        <div class="card">
+          <img
+            class="card-img"
+            src="images/polina-kuzovkova-ecD8R0BJXG8-unsplash1000x500.jpg"
+            alt=""
+          />
+          <div class="flex h-full flex-col py-5">
+            <h2 class="pb-2 text-xl font-semibold">En god natts sömn</h2>
+            <p class="pb-5">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
+              labore impedit velit debitis aliquam, voluptates repudiandae
+              facilis accusantium iste inventore ea cupiditate dolor commodi
+              assumenda! Ad sit eligendi quasi non ullam corrupti amet
+              laudantium harum, maiores officia reprehenderit autem similique
+              nulla ea. Accusamus, sed delectus!
+            </p>
+            <a
+              class="btn mt-auto flex items-center gap-1 self-start transition hover:translate-x-1"
+              href="#"
+              >Boka rum <i class="fa-solid fa-arrow-right fa-xs"></i
+            ></a>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <img class="card-img" src="images/pool-1000x500.jpg" alt="" />
+          <div class="flex h-full flex-col py-5">
+            <h2 class="pb-2 text-xl font-semibold">Unna dig en stund av ro</h2>
+            <p class="pb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+              excepturi, molestiae blanditiis quisquam repudiandae omnis facilis
+              sint ducimus nobis veritatis laudantium debitis et dolores
+              voluptate ab inventore laboriosam sapiente adipisci. Illum, amet.
+              Velit assumenda incidunt ducimus et dolor exercitationem atque,
+              aut esse voluptas, quas, veritatis enim consequuntur magnam
+              dolorem aliquid?
+            </p>
+            <a
+              class="btn mt-auto flex items-center gap-1 self-start transition hover:translate-x-1"
+              href="#"
+              >Boka tid <i class="fa-solid fa-arrow-right fa-xs"></i
+            ></a>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <img class="card-img" src="images/food-1000x500.jpg" alt="" />
+          <div class="flex h-full flex-col py-5">
+            <h2 class="pb-2 text-xl font-semibold">Mat för alla sinnen</h2>
+            <p class="pb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              cumque est blanditiis quis illum possimus, sunt, in quod vitae
+              nobis et alias corporis minima architecto laborum vero
+              exercitationem eligendi dignissimos eum quae beatae magni
+              assumenda praesentium eos? Repudiandae dignissimos consequuntur ab
+              dolor vel laborum odio facilis exercitationem corporis.
+            </p>
+            <a
+              class="btn mt-auto flex items-center gap-1 self-start transition hover:translate-x-1"
+              href="#"
+              >Läs meny <i class="fa-solid fa-arrow-right fa-xs"></i
+            ></a>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card">
+          <img class="card-img" src="images/walk-1000x500.jpg" alt="" />
+          <div class="flex h-full flex-col py-5">
+            <h2 class="pb-2 text-xl font-semibold">Utforska omgivningen</h2>
+            <p class="pb-5">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+              nostrum alias fugit. Tenetur dolore corporis magnam, culpa
+              assumenda nulla asperiores labore iste nobis sunt fuga neque sit
+              placeat qui dolores necessitatibus maiores, voluptatem error quasi
+              molestias perferendis. Fugiat, nulla cupiditate.
+            </p>
+            <a
+              class="btn mt-auto flex items-center gap-1 self-start transition hover:translate-x-1"
+              href="#"
+              >Se aktiviteter <i class="fa-solid fa-arrow-right fa-xs"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="flex flex-col items-center justify-center bg-zinc-800 py-10 text-white"
+    >
+      <div
+        class="flex flex-col items-center gap-10 md:grid md:grid-cols-2 lg:items-start xl:gap-x-30 2xl:gap-x-50"
+      >
+        <!-- Logga -->
+        <a class="font-barlow text-5xl font-medium" href="index.html"
+          >SALTSTONE HOTEL</a
+        >
+        <!-- Boka nu-knapp -->
+        <div
+          class="my-10 transition duration-700 ease-in-out hover:scale-110 sm:m-auto lg:col-start-3 lg:row-start-1 lg:m-0 lg:justify-self-end"
+        >
+          <a class="btn px-6 py-3 text-2xl" href="">BOKA NU</a>
+        </div>
+        <!-- Sidnavigation -->
+        <nav
+          class="flex flex-col items-center md:col-start-1 md:row-span-2 md:row-start-2 lg:items-start"
+        >
+          <h4 class="text-xl font-semibold text-lime-700">NAVIGATION</h4>
+          <ul class="flex flex-col items-center lg:items-start">
+            <li class="pt-3">
+              <a class="flex transition hover:translate-x-1" href="index.html"
+                >Hem</a
+              >
+            </li>
+            <li class="pt-3">
+              <a class="flex transition hover:translate-x-1" href="rooms.html"
+                >Hotellrum</a
+              >
+            </li>
+            <li class="pt-3">
+              <a class="flex transition hover:translate-x-1" href="rooms.html"
+                >Dagspa</a
+              >
+            </li>
+            <li class="pt-3">
+              <a class="flex transition hover:translate-x-1" href="spa.html"
+                >Behandlingar</a
+              >
+            </li>
+            <li class="pt-3">
+              <a
+                class="flex transition hover:translate-x-1"
+                href="restaurant.html"
+                >Restaurang</a
+              >
+            </li>
+            <li class="pt-3">
+              <a class="flex transition hover:translate-x-1" href="#"
+                >Aktiviteter</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- Kontakt-information -->
+        <div
+          class="flex flex-col items-center lg:col-start-2 lg:row-start-2 lg:grid"
+        >
+          <h4 class="text-xl font-semibold text-lime-700">KONTAKT</h4>
+          <p class="pt-3">+46 98 765 43 21</p>
+          <p class="pt-3">
+            <a
+              class="flex transition hover:translate-x-1"
+              href="mailto:contact@saltstonehotel.com"
+              >contact@saltstonehotel.com</a
+            >
+          </p>
+        </div>
+        <!-- Adress -->
+        <div
+          class="flex flex-col items-center lg:col-start-2 lg:row-start-3 lg:grid"
+        >
+          <h4 class="text-xl font-semibold text-lime-700">HITTA HIT</h4>
+          <p class="pt-3">Skogalundsvägen 106</p>
+          <p class="pt-3">654 32 Aspdalen</p>
+        </div>
+        <!-- Länkar sociala medier -->
+        <div
+          class="flex gap-10 py-5 md:flex-col md:items-center lg:col-start-3 lg:row-start-2 lg:grid lg:pt-0"
+        >
+          <h4 class="hidden text-xl font-semibold text-lime-700 md:inline">
+            FÖLJ OSS
+          </h4>
+          <!-- Ikoner -->
+          <div class="flex md:gap-5">
+            <i
+              class="fa-brands fa-facebook fa-2xl transition duration-400 ease-in-out hover:scale-120"
+              ><a href="#"></a
+            ></i>
+            <i
+              class="fa-brands fa-linkedin fa-2xl transition duration-400 ease-in-out hover:scale-120"
+              ><a href="#"></a
+            ></i>
+            <i
+              class="fa-brands fa-youtube fa-2xl transition duration-400 ease-in-out hover:scale-120"
+              ><a href="#"></a
+            ></i>
+            <i
+              class="fa-brands fa-instagram fa-2xl transition duration-400 ease-in-out hover:scale-120"
+              ><a href="#"></a
+            ></i>
+          </div>
+        </div>
+        <!-- Övriga länkar -->
+        <div
+          class="flex gap-8 md:flex-col md:items-center md:gap-3 lg:col-start-3 lg:grid"
+        >
+          <h4 class="hidden text-xl font-semibold text-lime-700 md:inline">
+            INFORMATION
+          </h4>
+          <a class="flex transition hover:translate-x-1" href=""
+            >Integritetspolicy</a
+          >
+          <a class="flex transition hover:translate-x-1" href="">Hållbarhet</a>
+          <a class="flex transition hover:translate-x-1" href="">Cookies</a>
+        </div>
+      </div>
+      <p class="mt-15 text-center">© 2025 Saltstone Hotel</p>
+    </footer>
+    <!--
+    Kod hör ihop med header-navigationen och är hämtad från: 
+    https://tailwindflex.com/@rajesh-maheshwari/navbar-with-sub-menus 
+    -->
+    <script>
+      // Öppnar/stänger dropdown-menyn
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          const isExpanded = this.getAttribute("aria-expanded") === "true";
+          this.setAttribute("aria-expanded", !isExpanded);
+          mobileMenu.classList.toggle("hidden");
+        });
+      // Öppnar/stänger undermenyn i dropdown-menyn
+      document
+        .querySelectorAll(".mobile-dropdown-trigger")
+        .forEach((trigger) => {
+          trigger.addEventListener("click", function () {
+            const content = this.nextElementSibling;
+            content.classList.toggle("hidden");
+          });
+        });
+    </script>
+  </body>
+</html>
