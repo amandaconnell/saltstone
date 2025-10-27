@@ -16,4 +16,7 @@
   .card-img {
     @apply rounded-lg md:mr-5 md:w-1/2 md:object-cover lg:mr-0 lg:w-full lg:object-fill;
   }
+  .card-body {
+    @apply flex h-full flex-col py-5;
+  }
 }
