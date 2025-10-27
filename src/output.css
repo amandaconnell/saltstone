@@ -23,6 +23,7 @@
     --color-gray-900: oklch(21% 0.034 264.665);
     --color-zinc-200: oklch(92% 0.004 286.32);
     --color-zinc-400: oklch(70.5% 0.015 286.067);
+    --color-zinc-500: oklch(55.2% 0.016 285.938);
     --color-zinc-800: oklch(27.4% 0.006 286.033);
     --color-neutral-300: oklch(87% 0 0);
     --color-black: #000;
@@ -40,6 +41,8 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
@@ -239,8 +242,23 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .z-0 {
+    z-index: 0;
+  }
+  .z-7 {
+    z-index: 7;
+  }
   .z-50 {
     z-index: 50;
+  }
+  .m-0 {
+    margin: calc(var(--spacing) * 0);
+  }
+  .m-6 {
+    margin: calc(var(--spacing) * 6);
+  }
+  .m-7 {
+    margin: calc(var(--spacing) * 7);
   }
   .mx-3 {
     margin-inline: calc(var(--spacing) * 3);
@@ -311,6 +329,9 @@
   .h-2\/3 {
     height: calc(2/3 * 100%);
   }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -334,6 +355,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
   }
   .w-40 {
     width: calc(var(--spacing) * 40);
@@ -463,17 +487,89 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-zinc-400 {
+    background-color: var(--color-zinc-400);
+  }
+  .bg-zinc-500 {
+    background-color: var(--color-zinc-500);
+  }
   .bg-zinc-800 {
     background-color: var(--color-zinc-800);
+  }
+  .bg-\[url\(images\/activities\.jpg\)\] {
+    background-image: url(images/activities.jpg);
+  }
+  .bg-\[url\(images\/benjamin-davies-mqN-EV9rNlY-unsplash\.jpg\)\] {
+    background-image: url(images/benjamin-davies-mqN-EV9rNlY-unsplash.jpg);
+  }
+  .bg-\[url\(images\/carlos-lozano-CPtY2E0S2Pc-unsplash\.jpg\)\] {
+    background-image: url(images/carlos-lozano-CPtY2E0S2Pc-unsplash.jpg);
+  }
+  .bg-\[url\(images\/christin-hume-0MoF-Fe0w0A-unsplash\.jpg\)\] {
+    background-image: url(images/christin-hume-0MoF-Fe0w0A-unsplash.jpg);
+  }
+  .bg-\[url\(images\/haley-phelps-S-llxYh3GzI-unsplash\.jpg\)\] {
+    background-image: url(images/haley-phelps-S-llxYh3GzI-unsplash.jpg);
   }
   .bg-\[url\(images\/hotel2\.jpg\)\] {
     background-image: url(images/hotel2.jpg);
   }
+  .bg-\[url\(images\/polina-kuzovkova-ecD8R0BJXG8-unsplash\)\] {
+    background-image: url(images/polina-kuzovkova-ecD8R0BJXG8-unsplash);
+  }
+  .bg-\[url\(images\/polina-kuzovkova-ecD8R0BJXG8-unsplash\.jpg\)\] {
+    background-image: url(images/polina-kuzovkova-ecD8R0BJXG8-unsplash.jpg);
+  }
+  .bg-\[url\(images\/restaurant\.jpg\)\] {
+    background-image: url(images/restaurant.jpg);
+  }
+  .bg-\[url\(images\/restaurant2\.jpg\)\] {
+    background-image: url(images/restaurant2.jpg);
+  }
+  .bg-\[url\(images\/restaurant3\.jpg\)\] {
+    background-image: url(images/restaurant3.jpg);
+  }
+  .bg-\[url\(images\/rooms\.jpg\)\] {
+    background-image: url(images/rooms.jpg);
+  }
+  .bg-\[url\(images\/rooms2\.jpg\)\] {
+    background-image: url(images/rooms2.jpg);
+  }
+  .bg-\[url\(images\/rooms3\.jpg\)\] {
+    background-image: url(images/rooms3.jpg);
+  }
+  .bg-\[url\(images\/rooms4\.jpg\)\] {
+    background-image: url(images/rooms4.jpg);
+  }
+  .bg-\[url\(images\/rooms5\.jpg\)\] {
+    background-image: url(images/rooms5.jpg);
+  }
+  .bg-\[url\(images\/spa\.jpg\)\] {
+    background-image: url(images/spa.jpg);
+  }
+  .bg-\[url\(images\/spa2\.jpg\)\] {
+    background-image: url(images/spa2.jpg);
+  }
+  .bg-\[url\(images\/spa3\.jpg\)\] {
+    background-image: url(images/spa3.jpg);
+  }
+  .bg-\[url\(images\/treatments\.jpg\)\] {
+    background-image: url(images/treatments.jpg);
+  }
   .bg-cover {
     background-size: cover;
   }
+  .bg-center {
+    background-position: center;
+  }
   .bg-no-repeat {
     background-repeat: no-repeat;
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -529,6 +625,21 @@
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
   }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
+  }
+  .pb-8 {
+    padding-bottom: calc(var(--spacing) * 8);
+  }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
+  }
+  .pb-12 {
+    padding-bottom: calc(var(--spacing) * 12);
+  }
+  .pb-15 {
+    padding-bottom: calc(var(--spacing) * 15);
+  }
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
   }
@@ -551,6 +662,10 @@
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
   .text-5xl {
     font-size: var(--text-5xl);
@@ -799,6 +914,12 @@
   .sm\:pr-0 {
     @media (width >= 40rem) {
       padding-right: calc(var(--spacing) * 0);
+    }
+  }
+  .sm\:text-5xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
   .sm\:text-6xl {
