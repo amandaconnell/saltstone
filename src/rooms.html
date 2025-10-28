@@ -207,13 +207,44 @@
       </div>
     </div>
     <main class="mx-10 mt-10 mb-5">
-      <!-- Behållare för cards -->
-      <div class="flex flex-col gap-x-5 lg:grid lg:grid-cols-3">
-        <!-- Card 1 -->
-        <div class="card">
+      <!-- Cards filtrerade enligt typ av rum
+      Kod hämtad från: https://www.w3schools.com/howto/howto_js_tabs.asp
+      -->
+      <div class="mb-4 ml-5 flex">
+        <!-- Knappar som styr vilket innehåll som visas -->
+        <div class="rounded-full border p-1 text-sm shadow-md/15">
+          <button
+            class="tablinks rounded-full px-4 py-2 font-semibold"
+            onclick="filterCards('all')"
+            id="openByDefault"
+          >
+            Alla rum
+          </button>
+          <button
+            class="tablinks rounded-full px-4 py-2 font-semibold"
+            onclick="filterCards('single')"
+          >
+            Enkelrum
+          </button>
+          <button
+            class="tablinks rounded-full px-4 py-2 font-semibold"
+            onclick="filterCards('double')"
+          >
+            Dubbelrum
+          </button>
+        </div>
+      </div>
+
+      <!-- Card container -->
+      <div
+        id="cardContainer"
+        class="flex flex-col gap-5 lg:grid lg:grid-cols-3"
+      >
+        <!-- Card 1: Enkel -->
+        <div class="card" data-category="single">
           <img src="https://placehold.co/500x300" class="card-img" />
-          <div class="card-body my-auto">
-            <h2 class="pb-2 text-xl font-semibold">Rum 1</h2>
+          <div class="card-body">
+            <h2 class="pb-2 text-xl font-semibold">Rum 1 (Enkel)</h2>
             <p>Beskrivning</p>
             <p class="pb-5">Pris</p>
             <a
@@ -223,11 +254,12 @@
             ></a>
           </div>
         </div>
-        <!-- Card 2 -->
-        <div class="card">
+
+        <!-- Card 2: Dubbel -->
+        <div class="card" data-category="double">
           <img src="https://placehold.co/500x300" class="card-img" />
-          <div class="card-body my-auto">
-            <h2 class="pb-2 text-xl font-semibold">Rum 2</h2>
+          <div class="card-body">
+            <h2 class="pb-2 text-xl font-semibold">Rum 2 (Dubbel)</h2>
             <p>Beskrivning</p>
             <p class="pb-5">Pris</p>
             <a
@@ -237,11 +269,87 @@
             ></a>
           </div>
         </div>
-        <!-- Card 3 -->
-        <div class="card">
+
+        <!-- Card 3: Dubbel -->
+        <div class="card" data-category="double">
           <img src="https://placehold.co/500x300" class="card-img" />
-          <div class="card-body my-auto">
-            <h2 class="pb-2 text-xl font-semibold">Rum 3</h2>
+          <div class="card-body">
+            <h2 class="pb-2 text-xl font-semibold">Rum 3 (Dubbel)</h2>
+            <p>Beskrivning</p>
+            <p class="pb-5">Pris</p>
+            <a
+              class="btn mt-auto flex items-center gap-1 self-start transition hover:translate-x-1"
+              href="#"
+              >Läs mer <i class="fa-solid fa-arrow-right fa-xs"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Card 4: Enkel -->
+        <div class="card" data-category="single">
+          <img src="https://placehold.co/500x300" class="card-img" />
+          <div class="card-body">
+            <h2 class="pb-2 text-xl font-semibold">Rum 4 (Enkel)</h2>
+            <p>Beskrivning</p>
+            <p class="pb-5">Pris</p>
+            <a
+              class="btn mt-auto flex items-center gap-1 self-start transition hover:translate-x-1"
+              href="#"
+              >Läs mer <i class="fa-solid fa-arrow-right fa-xs"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Card 5: Enkel -->
+        <div class="card" data-category="single">
+          <img src="https://placehold.co/500x300" class="card-img" />
+          <div class="card-body">
+            <h2 class="pb-2 text-xl font-semibold">Rum 5 (Enkel)</h2>
+            <p>Beskrivning</p>
+            <p class="pb-5">Pris</p>
+            <a
+              class="btn mt-auto flex items-center gap-1 self-start transition hover:translate-x-1"
+              href="#"
+              >Läs mer <i class="fa-solid fa-arrow-right fa-xs"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Card 6: Dubbel -->
+        <div class="card" data-category="double">
+          <img src="https://placehold.co/500x300" class="card-img" />
+          <div class="card-body">
+            <h2 class="pb-2 text-xl font-semibold">Rum 6 (Dubbel)</h2>
+            <p>Beskrivning</p>
+            <p class="pb-5">Pris</p>
+            <a
+              class="btn mt-auto flex items-center gap-1 self-start transition hover:translate-x-1"
+              href="#"
+              >Läs mer <i class="fa-solid fa-arrow-right fa-xs"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Card 7: Dubbel -->
+        <div class="card" data-category="double">
+          <img src="https://placehold.co/500x300" class="card-img" />
+          <div class="card-body">
+            <h2 class="pb-2 text-xl font-semibold">Rum 7 (Dubbel)</h2>
+            <p>Beskrivning</p>
+            <p class="pb-5">Pris</p>
+            <a
+              class="btn mt-auto flex items-center gap-1 self-start transition hover:translate-x-1"
+              href="#"
+              >Läs mer <i class="fa-solid fa-arrow-right fa-xs"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Card 8: Dubbel -->
+        <div class="card" data-category="double">
+          <img src="https://placehold.co/500x300" class="card-img" />
+          <div class="card-body">
+            <h2 class="pb-2 text-xl font-semibold">Rum 8 (Dubbel)</h2>
             <p>Beskrivning</p>
             <p class="pb-5">Pris</p>
             <a
@@ -401,6 +509,34 @@
             content.classList.toggle("hidden");
           });
         });
+    </script>
+    <!-- JS för att filtrera och visa olika typer av rum -->
+    <script>
+      // Klickar på elementet med id "openByDefault" för att öppna det när sidan laddas
+      document.getElementById("openByDefault").click();
+
+      function filterCards(category) {
+        const cards = document.querySelectorAll("#cardContainer .card");
+
+        // Visar cards som matchar vald kategori (visar alla card om "alla rum" är vald)
+        cards.forEach((card) => {
+          const match =
+            category === "all" || card.dataset.category === category;
+          card.classList.toggle("hidden", !match);
+        });
+
+        // Uppdaterar utseendet för den aktiva knappen genom att ta bort/lägga till klasser
+        document
+          .querySelectorAll(".tablinks")
+          .forEach((btn) =>
+            btn.classList.remove("border", "bg-lime-700", "text-white"),
+          );
+        event.currentTarget.classList.add(
+          "border",
+          "bg-lime-700",
+          "text-white",
+        );
+      }
     </script>
   </body>
 </html>
