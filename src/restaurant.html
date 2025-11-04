@@ -206,7 +206,98 @@
         <i class="fa-solid fa-chevron-down fa-2xl" style="color: #ffffff"></i>
       </div> -->
     </div>
-    <main class="mx-10 mt-10 mb-5"></main>
+    <main class="mx-10 mt-10 mb-5">
+      <!-- Behållare -->
+      <div class="flex flex-col gap-4 pb-10 lg:flex-row">
+        <!-- Bild -->
+        <img
+          class="rounded-lg object-cover lg:w-1/2"
+          src="images/josua-hunziker-vJKmdq7-Q2Q-unsplash.jpg"
+          alt=""
+        />
+        <!-- Info-ruta -->
+        <div class="flex grow flex-col items-center gap-8 py-5 text-center">
+          <h2 class="text-4xl font-semibold">Restaurang Orangeriet</h2>
+          <!-- <p>Fyll på text här!</p> -->
+          <h3 class="text-2xl font-semibold">ÖPPETTIDER</h3>
+          <table class="w-[200px]">
+            <tr>
+              <th class="pb-3">Mån-tor</th>
+              <td class="pb-3">06:00 - 23:00</td>
+            </tr>
+            <tr>
+              <th class="p-3">Fre</th>
+              <td>06:00 - 02:00</td>
+            </tr>
+            <tr>
+              <th class="p-3">Lör</th>
+              <td>07:00 - 02:00</td>
+            </tr>
+            <tr>
+              <th class="pt-3">Sön</th>
+              <td class="pt-3">07:00 - 23:00</td>
+            </tr>
+          </table>
+          <div class="flex gap-4">
+            <a
+              class="btn self-center text-xl transition duration-700 ease-in-out hover:scale-110"
+              href="#"
+              >LÄS MENY</a
+            >
+            <a
+              class="btn self-center bg-lime-700 text-xl text-white transition duration-700 ease-in-out hover:scale-110"
+              href="#"
+              >BOKA BORD</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Behållare för cards -->
+      <div class="flex flex-col gap-x-5 lg:grid lg:grid-cols-2">
+        <!-- Card 1: Frukost -->
+        <div class="card">
+          <img class="card-img" src="images/breakfast.jpg" alt="" />
+          <div class="flex h-full flex-col py-5">
+            <h2 class="pb-2 text-xl font-semibold">Frukost</h2>
+            <p class="pb-5">
+              Frukost serveras 06:00 - 10:00 på vardagar och 07:00 - 11:00 på
+              helger.
+            </p>
+          </div>
+        </div>
+        <!-- Card 2: Lunch -->
+        <div class="card">
+          <img class="card-img" src="images/lunch.jpg" alt="" />
+          <div class="flex h-full flex-col py-5">
+            <h2 class="pb-2 text-xl font-semibold">Lunch</h2>
+            <p class="pb-5">
+              Lunch serveras 11:00 - 14:00 alla dagar i veckan.
+            </p>
+          </div>
+        </div>
+        <!-- Card 3: Middag -->
+        <div class="card">
+          <img class="card-img" src="images/dinner.jpg" alt="" />
+          <div class="flex h-full flex-col py-5">
+            <h2 class="pb-2 text-xl font-semibold">Middag</h2>
+            <p class="pb-5">
+              Middag serveras 17:00 - 23:00 söndagar till torsdagar och 17:00 -
+              02:00 på fredagar och lördagar.
+            </p>
+          </div>
+        </div>
+        <!-- Card 4: Fika -->
+        <div class="card">
+          <img class="card-img" src="images/fika.jpg" alt="" />
+          <div class="flex h-full flex-col py-5">
+            <h2 class="pb-2 text-xl font-semibold">Fika</h2>
+            <p class="pb-5">
+              Fika serveras under alla timmar som restaurangen är öppen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer
       class="flex flex-col items-center justify-center bg-zinc-800 py-10 text-white"
     >
