@@ -1268,6 +1268,16 @@
       margin: calc(var(--spacing) * 20);
     }
   }
+  .xl\:mx-20 {
+    @media (width >= 80rem) {
+      margin-inline: calc(var(--spacing) * 20);
+    }
+  }
+  .xl\:my-10 {
+    @media (width >= 80rem) {
+      margin-block: calc(var(--spacing) * 10);
+    }
+  }
   .xl\:-translate-x-1\/2 {
     @media (width >= 80rem) {
       --tw-translate-x: calc(calc(1/2 * 100%) * -1);
