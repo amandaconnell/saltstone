@@ -329,6 +329,18 @@
   .ml-10 {
     margin-left: calc(var(--spacing) * 10);
   }
+  .ml-15 {
+    margin-left: calc(var(--spacing) * 15);
+  }
+  .ml-20 {
+    margin-left: calc(var(--spacing) * 20);
+  }
+  .ml-25 {
+    margin-left: calc(var(--spacing) * 25);
+  }
+  .ml-30 {
+    margin-left: calc(var(--spacing) * 30);
+  }
   .block {
     display: block;
   }
@@ -569,6 +581,10 @@
   .border-t-2 {
     border-top-style: var(--tw-border-style);
     border-top-width: 2px;
+  }
+  .border-r-4 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 4px;
   }
   .border-l-2 {
     border-left-style: var(--tw-border-style);
