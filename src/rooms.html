@@ -229,24 +229,26 @@
       <!-- Cards filtrerade enligt typ av rum
       Kod hämtad från: https://www.w3schools.com/howto/howto_js_tabs.asp
       -->
-      <div class="mb-4 ml-5 flex">
+      <div class="ml-5 flex pb-5">
         <!-- Knappar som styr vilket innehåll som visas -->
-        <div class="rounded-full border p-1 text-sm shadow-md/15">
+        <div
+          class="rounded-full border p-1 shadow-md/15 max-sm:text-xs sm:text-sm"
+        >
           <button
-            class="tablinks cursor-pointer rounded-full px-4 py-2 font-semibold"
+            class="tablinks cursor-pointer rounded-full font-semibold max-sm:px-3 max-sm:py-1.5 sm:px-4 sm:py-2"
             onclick="filterCards('all')"
             id="openByDefault"
           >
             Alla rum
           </button>
           <button
-            class="tablinks cursor-pointer rounded-full px-4 py-2 font-semibold"
+            class="tablinks cursor-pointer rounded-full font-semibold max-sm:px-3 max-sm:py-1.5 sm:px-4 sm:py-2"
             onclick="filterCards('single')"
           >
             Enkelrum
           </button>
           <button
-            class="tablinks cursor-pointer rounded-full px-4 py-2 font-semibold"
+            class="tablinks cursor-pointer rounded-full font-semibold max-sm:px-3 max-sm:py-1.5 sm:px-4 sm:py-2"
             onclick="filterCards('double')"
           >
             Dubbelrum
@@ -256,11 +258,17 @@
       <!-- Card container -->
       <div
         id="cardContainer"
-        class="flex flex-col gap-5 lg:grid lg:grid-cols-3"
+        class="max-sm:flex max-sm:flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-3"
       >
         <!-- Card 1: Enkel -->
-        <div class="card" data-category="single">
-          <img src="images/room3.jpg" class="card-img" />
+        <div
+          class="card sm:mb-10 sm:flex-row md:mb-5 md:flex-col"
+          data-category="single"
+        >
+          <img
+            src="images/room3.jpg"
+            class="card-img sm:mr-5 sm:w-2/3 sm:object-cover md:w-full"
+          />
           <div class="card-body gap-1">
             <h2 class="pb-2 text-xl font-semibold">Enkelrum</h2>
             <p class="flex items-center gap-3">
@@ -284,8 +292,14 @@
         </div>
 
         <!-- Card 2: Dubbel -->
-        <div class="card" data-category="double">
-          <img src="images/room2.jpg" class="card-img" />
+        <div
+          class="card sm:mb-10 sm:flex-row md:mb-5 md:flex-col"
+          data-category="double"
+        >
+          <img
+            src="images/room2.jpg"
+            class="card-img sm:mr-5 sm:w-2/3 sm:object-cover md:w-full"
+          />
           <div class="card-body gap-1">
             <h2 class="pb-2 text-xl font-semibold">Dubbelrum</h2>
             <p class="flex items-center gap-3">
@@ -309,8 +323,14 @@
         </div>
 
         <!-- Card 3: Dubbel -->
-        <div class="card" data-category="double">
-          <img src="images/room1.jpg" class="card-img" />
+        <div
+          class="card sm:mb-10 sm:flex-row md:mb-5 md:flex-col"
+          data-category="double"
+        >
+          <img
+            src="images/room1.jpg"
+            class="card-img sm:mr-5 sm:w-2/3 sm:object-cover md:w-full"
+          />
           <div class="card-body gap-1">
             <h2 class="pb-2 text-xl font-semibold">Dubbelrum</h2>
             <p class="flex items-center gap-3">
@@ -334,8 +354,14 @@
         </div>
 
         <!-- Card 4: Enkel -->
-        <div class="card" data-category="single">
-          <img src="images/room5.jpg" class="card-img" />
+        <div
+          class="card sm:mb-10 sm:flex-row md:mb-5 md:flex-col"
+          data-category="single"
+        >
+          <img
+            src="images/room5.jpg"
+            class="card-img sm:mr-5 sm:w-2/3 sm:object-cover md:w-full"
+          />
           <div class="card-body gap-1">
             <h2 class="pb-2 text-xl font-semibold">Enkelrum</h2>
             <p class="flex items-center gap-3">
@@ -359,8 +385,14 @@
         </div>
 
         <!-- Card 5: Enkel -->
-        <div class="card" data-category="single">
-          <img src="images/room3.jpg" class="card-img" />
+        <div
+          class="card sm:mb-10 sm:flex-row md:mb-5 md:flex-col"
+          data-category="single"
+        >
+          <img
+            src="images/room3.jpg"
+            class="card-img sm:mr-5 sm:w-2/3 sm:object-cover md:w-full"
+          />
           <div class="card-body gap-1">
             <h2 class="pb-2 text-xl font-semibold">Enkelrum</h2>
             <p class="flex items-center gap-3">
@@ -384,8 +416,14 @@
         </div>
 
         <!-- Card 6: Dubbel -->
-        <div class="card" data-category="double">
-          <img src="images/room3.jpg" class="card-img" />
+        <div
+          class="card sm:mb-10 sm:flex-row md:mb-5 md:flex-col"
+          data-category="double"
+        >
+          <img
+            src="images/room3.jpg"
+            class="card-img sm:mr-5 sm:w-2/3 sm:object-cover md:w-full"
+          />
           <div class="card-body gap-1">
             <h2 class="pb-2 text-xl font-semibold">Dubbelrum</h2>
             <p class="flex items-center gap-3">
@@ -409,8 +447,14 @@
         </div>
 
         <!-- Card 7: Dubbel -->
-        <div class="card" data-category="double">
-          <img src="images/room2.jpg" class="card-img" />
+        <div
+          class="card sm:mb-10 sm:flex-row md:mb-5 md:flex-col"
+          data-category="double"
+        >
+          <img
+            src="images/room2.jpg"
+            class="card-img sm:mr-5 sm:w-2/3 sm:object-cover md:w-full"
+          />
           <div class="card-body gap-1">
             <h2 class="pb-2 text-xl font-semibold">Dubbelrum</h2>
             <p class="flex items-center gap-3">
@@ -434,8 +478,14 @@
         </div>
 
         <!-- Card 8: Dubbel -->
-        <div class="card" data-category="double">
-          <img src="images/room4.jpg" class="card-img" />
+        <div
+          class="card sm:mb-10 sm:flex-row md:mb-5 md:flex-col"
+          data-category="double"
+        >
+          <img
+            src="images/room4.jpg"
+            class="card-img sm:mr-5 sm:w-2/3 sm:object-cover md:w-full"
+          />
           <div class="card-body gap-1">
             <h2 class="pb-2 text-xl font-semibold">Dubbelrum</h2>
             <p class="flex items-center gap-3">
