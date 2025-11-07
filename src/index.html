@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,7 +29,7 @@
     ></script>
   </head>
   <body class="font-abel">
-    <div class="h-screen bg-[url(images/hotel2.jpg)] bg-cover bg-no-repeat">
+    <div class="h-screen bg-[url(images/home-bg.jpg)] bg-cover bg-no-repeat">
       <!--
       Kod hämtad från: https://tailwindflex.com/@rajesh-maheshwari/navbar-with-sub-menus
       Jag har modifierat innehåll & utseende
@@ -62,7 +62,7 @@
                   class="relative py-2 after:absolute after:bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
                   >HOTELLRUM</a
                 >
-                <!-- Trigger för undermeny -- öppnas vid hovring -->
+                <!-- Trigger för undermeny - öppnas vid hovring -->
                 <div class="group relative">
                   <button class="flex items-center py-2">
                     SPA
@@ -235,8 +235,8 @@
         <div class="card">
           <img
             class="card-img"
-            src="images/polina-kuzovkova-ecD8R0BJXG8-unsplash1000x500.jpg"
-            alt=""
+            src="images/bedside-lamp.jpg"
+            alt="Ett mörkt rum med en lampa som lyser på ett sängbord framför ett fönster. Kanten på en säng skymtas till höger."
           />
           <div class="flex h-full flex-col py-5">
             <h2 class="pb-2 text-xl font-semibold">En god natts sömn</h2>
@@ -257,7 +257,11 @@
         </div>
         <!-- Card 2: Spa -->
         <div class="card">
-          <img class="card-img" src="images/pool-1000x500.jpg" alt="" />
+          <img
+            class="card-img"
+            src="images/woman-in-pool.jpg"
+            alt="En kvinna simmar eller ligger på rygg i en väldigt blå pool."
+          />
           <div class="flex h-full flex-col py-5">
             <h2 class="pb-2 text-xl font-semibold">Unna dig en stund av ro</h2>
             <p class="pb-5">
@@ -277,7 +281,11 @@
         </div>
         <!-- Card 3: Restaurang -->
         <div class="card">
-          <img class="card-img" src="images/food-1000x500.jpg" alt="" />
+          <img
+            class="card-img"
+            src="images/food-in-pan.jpg"
+            alt="Mat i en stekpanna toppad med salladsblad och groddar."
+          />
           <div class="flex h-full flex-col py-5">
             <h2 class="pb-2 text-xl font-semibold">Mat för alla sinnen</h2>
             <p class="pb-5">
@@ -297,7 +305,11 @@
         </div>
         <!-- Card 4: Aktiviteter -->
         <div class="card">
-          <img class="card-img" src="images/walk-1000x500.jpg" alt="" />
+          <img
+            class="card-img"
+            src="images/woman-nature-walk.jpg"
+            alt="En kvinna promenerar i naturen. Det är dimma i luften. I förgrunden syns två stora trädstammar och stenar täckta med grön mossa."
+          />
           <div class="flex h-full flex-col py-5">
             <h2 class="pb-2 text-xl font-semibold">Utforska omgivningen</h2>
             <p class="pb-5">
@@ -315,10 +327,10 @@
           </div>
         </div>
       </div>
-      <!-- Behållare för omdöme -->
+      <!-- Behållare för omdömen -->
       <h2 class="pb-10 text-3xl font-semibold">Vad våra gäster säger</h2>
       <div class="flex flex-col gap-8 pb-10 sm:grid sm:grid-cols-3">
-        <!-- Omödme 1 -->
+        <!-- Omödme 1: Nora -->
         <div
           class="relative flex h-full flex-col justify-between gap-8 rounded-lg border-r border-b p-4"
         >
@@ -328,11 +340,14 @@
             hotellet var precis vad jag behövde efter ett tufft år.
           </p>
           <div class="flex items-center gap-6 sm:flex-col sm:gap-3 lg:flex-row">
-            <img class="w-[100px]" src="images/woman1.png" alt="" />
+            <img
+              src="images/woman-1.png"
+              alt="En leende ung kvinna med kort hår."
+            />
             <p class="font-semibold">Nora Achebe</p>
           </div>
         </div>
-        <!-- Omödme 2 -->
+        <!-- Omödme 2: Oskar -->
         <div
           class="relative flex h-full flex-col justify-between gap-8 rounded-lg border-r border-b p-4"
         >
@@ -342,11 +357,14 @@
             vecka med alla aktiviteter och god mat på restaurangen.
           </p>
           <div class="flex items-center gap-6 sm:flex-col sm:gap-3 lg:flex-row">
-            <img class="w-[100px]" src="images/man1.png" alt="" />
+            <img
+              src="images/man-1.png"
+              alt="En ung man med skägg som bär en keps bak och fram."
+            />
             <p class="font-semibold">Oskar Andersson</p>
           </div>
         </div>
-        <!-- Omödme 3 -->
+        <!-- Omödme 3: Charlotte -->
         <div
           class="relative flex h-full flex-col justify-between gap-8 rounded-lg border-r border-b p-4"
         >
@@ -356,20 +374,27 @@
             denna lilla pärla omgiven av storslagna naturvyer.
           </p>
           <div class="flex items-center gap-6 sm:flex-col sm:gap-3 lg:flex-row">
-            <img class="w-[100px]" src="images/woman2.png" alt="" />
+            <img
+              src="images/woman-2.png"
+              alt="En äldre kvinna med långt vitt hår och glasögon med svarta bågar."
+            />
             <p class="font-semibold">Charlotte Holmberg</p>
           </div>
         </div>
       </div>
       <!-- Behållare för nyhetsbrev -->
       <div class="flex flex-col gap-5 pb-10 md:flex-row">
-        <img class="rounded-lg md:w-1/2" src="images/hotel3.jpg" alt="" />
+        <img
+          class="rounded-lg md:w-1/2"
+          src="images/hotel-building.jpg"
+          alt=""
+        />
         <div class="flex flex-col justify-center gap-4 lg:mx-10">
           <p class="text-2xl font-semibold">
             Anmäl dig till vårt nyhetsbrev för att ta del av unika erbjudanden
             och hålla dig uppdaterad om våra senaste event!
           </p>
-          <form action="" class="flex flex-col gap-2">
+          <form class="flex flex-col gap-2">
             <input
               type="email"
               placeholder="Email"
