@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Examination" />
+    <meta name="author" content="Amanda Connell" />
     <title>Saltstone Hotel</title>
     <link
       rel="apple-touch-icon"
@@ -29,17 +31,18 @@
     ></script>
   </head>
   <body class="font-abel">
+    <!-- Lägger till en bakgrundsbild för hero-sektionen med olika höjd beroende på skärmstorlek -->
     <div
       class="h-125 bg-[url(images/home-hero.webp)] bg-cover bg-no-repeat md:h-screen"
     >
       <!--
-      Kod hämtad från: https://tailwindflex.com/@rajesh-maheshwari/navbar-with-sub-menus
-      Jag har modifierat innehåll & utseende
+       Kod hämtad från: https://tailwindflex.com/@rajesh-maheshwari/navbar-with-sub-menus
+       För att skapa navigation med dropdown-meny och undermeny, jag har modifierat innehåll & utseende
        -->
       <header class="mx-4 py-4 text-white sm:mx-6 md:mx-8 lg:mx-10">
-        <nav class="">
+        <nav>
           <div class="relative flex items-center justify-between">
-            <!-- Logga -->
+            <!-- Logotyp som skalas upp och ned responsivt -->
             <a
               class="font-barlow mr-20 text-3xl font-medium text-shadow-lg/50 sm:mr-0 md:text-5xl"
               href="index.html"
@@ -47,9 +50,8 @@
               SALTSTONE HOTEL
             </a>
             <!--
-            Kod för hover-animation hämtad från: 
-            https://codepen.io/Marcos-Riverola/pen/poQmRKV?editors=1010 
-            -->
+             Kod för hover-animation hämtad från: https://codepen.io/Marcos-Riverola/pen/poQmRKV?editors=1010 
+             -->
             <div
               class="hidden space-x-6 font-medium lg:flex xl:absolute xl:left-1/2 xl:-translate-x-1/2 xl:transform"
             >
@@ -64,7 +66,7 @@
                   class="relative py-2 after:absolute after:bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
                   >HOTELLRUM</a
                 >
-                <!-- Trigger för undermeny - öppnas vid hovring -->
+                <!-- Trigger för undermenyn - öppnas vid hovring -->
                 <div class="group relative">
                   <button class="flex items-center py-2">
                     SPA
@@ -94,7 +96,6 @@
                     </div>
                   </div>
                 </div>
-
                 <a
                   href="restaurant.html"
                   class="relative py-2 after:absolute after:bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
@@ -107,7 +108,7 @@
                 >
               </div>
             </div>
-
+            <!-- Kontakt-knapp och knapp för att öppna dropdown-menyn -->
             <div
               class="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6"
             >
@@ -118,7 +119,7 @@
                   >KONTAKT</a
                 >
               </div>
-              <!-- Knapp för dropdown-meny för mindre skärmar -->
+              <!-- Knapp för dropdown-meny som endast visas på mindre skärmar -->
               <div class="lg:hidden">
                 <button
                   type="button"
@@ -132,7 +133,7 @@
               </div>
             </div>
           </div>
-          <!-- Dropdown-meny, visa/dölj -->
+          <!-- Dropdown-meny, öppnas och stängs när man trycker på knappen -->
           <div
             class="absolute inset-x-0 mx-3 mt-2 hidden bg-zinc-800 font-medium lg:hidden"
             id="mobile-menu"
@@ -148,7 +149,7 @@
                 class="block rounded-md px-3 py-2 text-base hover:bg-zinc-200 hover:font-bold hover:text-black"
                 >HOTELLRUM</a
               >
-              <!-- Undermeny inuti dropdown-menyn -->
+              <!-- Undermeny inuti dropdown-menyn, öppnas genom att trycka på Spa-knappen -->
               <div class="relative">
                 <button
                   class="mobile-dropdown-trigger flex w-full items-center justify-between rounded-md px-3 py-2 text-left text-base font-medium hover:bg-zinc-200 hover:font-bold hover:text-black"
@@ -187,7 +188,7 @@
                 class="block rounded-md px-3 py-2 text-base hover:bg-zinc-200 hover:font-bold hover:text-black"
                 >ÄVENTYR</a
               >
-              <!-- Kontakt-knapp -->
+              <!-- Kontakt-knappen placeras inuti dropdown-menyn på mindre skärmar -->
               <div
                 class="mt-2 flex items-center justify-center border-t-2 border-zinc-400 pt-4 sm:hidden"
               >
@@ -201,7 +202,7 @@
           </div>
         </nav>
       </header>
-      <!-- Hero -->
+      <!-- Hero-sektion, storleken skalas responsivt -->
       <div
         class="flex h-5/6 flex-col place-content-around content-between items-center gap-20 md:h-8/9"
       >
@@ -223,6 +224,9 @@
           >
         </div>
       </div>
+      <!-- Pil som pekar nedåt, visas endast när hero-sektionen fyller hela skärmens höjd
+       För att förtydliga att det finns ytterligare innehåll nedanför
+       -->
       <div class="invisible flex justify-center md:visible">
         <i
           class="fa-solid fa-chevron-down fa-2xl mt-2 sm:mt-0"
@@ -231,7 +235,7 @@
       </div>
     </div>
     <main class="m-4 sm:m-6 md:m-8 lg:m-10">
-      <!-- Behållare för cards -->
+      <!-- Behållare för cards, använder flexbox/grid -->
       <div
         class="spacing-bottom cards-gap flex flex-col lg:grid lg:grid-cols-2"
       >
@@ -331,19 +335,21 @@
           </div>
         </div>
       </div>
-      <!-- Behållare för omdömen -->
       <h2
         class="mb-10 text-center text-3xl font-semibold sm:mb-12 md:mb-14 lg:mb-16"
       >
         Vad våra gäster säger
       </h2>
+      <!-- Behållare för omdömen, använder flexbox/grid -->
       <div
         class="mb-12 flex flex-col gap-8 sm:mb-14 sm:grid sm:grid-cols-3 md:mb-16 lg:mb-18"
       >
         <!-- Omödme 1: Nora -->
+        <!-- Lägger till en ram endast nedanför och på höger sida -->
         <div
           class="relative flex h-full flex-col justify-between gap-8 rounded-lg border-r border-b p-4"
         >
+          <!-- Ikon som överlappar div-rutans gränser -->
           <i class="fa-solid fa-quote-left fa-2xl absolute -top-1 -left-2"></i>
           <p class="ml-5">
             En resa jag kommer att minnas länge! Lugnet både i och kring
@@ -358,10 +364,13 @@
           </div>
         </div>
         <!-- Omödme 2: Oskar -->
+        <!-- Lägger till en ram endast nedanför och på höger sida -->
         <div
           class="relative flex h-full flex-col justify-between gap-8 rounded-lg border-r border-b p-4"
         >
+          <!-- Ikon som överlappar div-rutans gränser -->
           <i class="fa-solid fa-quote-left fa-2xl absolute -top-1 -left-2"></i>
+
           <p class="ml-5">
             Jag besökte Saltstone på semester med min son och hade en fantastisk
             vecka med alla aktiviteter och god mat på restaurangen.
@@ -375,9 +384,11 @@
           </div>
         </div>
         <!-- Omödme 3: Charlotte -->
+        <!-- Lägger till en ram endast nedanför och på höger sida -->
         <div
           class="relative flex h-full flex-col justify-between gap-8 rounded-lg border-r border-b p-4"
         >
+          <!-- Ikon som överlappar div-rutans gränser -->
           <i class="fa-solid fa-quote-left fa-2xl absolute -top-1 -left-2"></i>
           <p class="ml-5">
             Saltstones spa är i en klass för sig! Du får absolut inte missa
@@ -392,7 +403,10 @@
           </div>
         </div>
       </div>
-      <!-- Behållare för nyhetsbrev -->
+      <!-- 
+       Behållare för signup till nyhetsbrev, använder flexbox
+       flex-row-reverse placerar bilden efter texten på bredare skärmar 
+      -->
       <div class="flex flex-col gap-5 md:flex-row-reverse">
         <img
           class="rounded-lg md:w-1/2"
@@ -422,16 +436,20 @@
     <footer
       class="flex w-full flex-col items-start justify-between bg-zinc-800 px-4 py-10 text-zinc-100 sm:px-6 md:px-8 lg:px-10"
     >
+      <!-- 
+       Placerar elementen med flexbox/grid och använder row-start och col-start
+       på varje sektion för att flytta runt dessa beroende på skärmens bredd
+       -->
       <div
         class="flex w-full flex-col items-center gap-10 md:grid md:grid-cols-2 lg:items-start xl:grid-cols-3"
       >
-        <!-- Logga -->
+        <!-- Logotyp -->
         <a
           class="font-barlow text-center text-5xl font-medium text-white lg:text-start"
           href="index.html"
           >SALTSTONE HOTEL</a
         >
-        <!-- Boka nu-knapp -->
+        <!-- CTA-knapp -->
         <div
           class="my-4 transition duration-700 ease-in-out hover:scale-110 sm:mx-auto md:my-auto lg:col-start-3 lg:row-start-1 lg:ml-0 xl:col-start-3 xl:row-start-3 xl:my-0 xl:justify-self-end"
         >
@@ -443,7 +461,7 @@
         <nav
           class="flex flex-col items-center md:col-start-1 md:row-span-2 md:row-start-2 lg:items-start"
         >
-          <h4 class="text-xl font-semibold text-lime-600">NAVIGATION</h4>
+          <h3 class="text-xl font-semibold text-lime-600">NAVIGATION</h3>
           <ul class="flex flex-col items-center lg:items-start">
             <li class="pt-3">
               <a class="flex transition hover:translate-x-1" href="index.html"
@@ -546,14 +564,15 @@
           <a class="flex transition hover:translate-x-1" href="">Cookies</a>
         </div>
       </div>
+      <!-- Lögger till en linje för att dela upp innehållet -->
       <div class="mt-15 w-full border-t-1">
         <p class="mt-10 text-center lg:text-start">© 2025 Saltstone Hotel</p>
       </div>
     </footer>
     <!--
-    Kod hör ihop med header-navigationen och är hämtad från: 
-    https://tailwindflex.com/@rajesh-maheshwari/navbar-with-sub-menus 
-    -->
+     Kod hör ihop med header-navigationen och är hämtad från: 
+     https://tailwindflex.com/@rajesh-maheshwari/navbar-with-sub-menus 
+     -->
     <script>
       // Öppnar/stänger dropdown-menyn
       document

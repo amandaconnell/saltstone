@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Examination" />
+    <meta name="author" content="Amanda Connell" />
     <title>Dagspa - Saltstone</title>
     <link
       rel="apple-touch-icon"
@@ -29,17 +31,18 @@
     ></script>
   </head>
   <body class="font-abel">
+    <!-- Lägger till en bakgrundsbild för hero-sektionen med olika höjd beroende på skärmstorlek -->
     <div
       class="relative bg-[url(images/spa-hero.webp)] bg-cover bg-center bg-no-repeat lg:bg-[url(images/spa-hero-lg.webp)] 2xl:bg-[url(images/spa-hero-2xl.webp)]"
     >
       <!--
-      Kod hämtad från: https://tailwindflex.com/@rajesh-maheshwari/navbar-with-sub-menus
-      Jag har modifierat innehåll & utseende
+       Kod hämtad från: https://tailwindflex.com/@rajesh-maheshwari/navbar-with-sub-menus
+       För att skapa navigation med dropdown-meny och undermeny, jag har modifierat innehåll & utseende
        -->
       <header class="mx-4 py-4 text-white sm:mx-6 md:mx-8 lg:mx-10">
-        <nav class="">
+        <nav>
           <div class="relative flex items-center justify-between">
-            <!-- Logga -->
+            <!-- Logotyp som skalas upp och ned responsivt -->
             <a
               class="font-barlow mr-20 text-3xl font-medium text-shadow-lg/50 sm:mr-0 md:text-5xl"
               href="index.html"
@@ -47,9 +50,8 @@
               SALTSTONE HOTEL
             </a>
             <!--
-            Kod för hover-animation hämtad från: 
-            https://codepen.io/Marcos-Riverola/pen/poQmRKV?editors=1010 
-            -->
+             Kod för hover-animation hämtad från: https://codepen.io/Marcos-Riverola/pen/poQmRKV?editors=1010 
+             -->
             <div
               class="hidden space-x-6 font-medium lg:flex xl:absolute xl:left-1/2 xl:-translate-x-1/2 xl:transform"
             >
@@ -64,7 +66,7 @@
                   class="relative py-2 after:absolute after:bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
                   >HOTELLRUM</a
                 >
-                <!-- Trigger för undermeny - öppnas vid hovring -->
+                <!-- Trigger för undermenyn - öppnas vid hovring -->
                 <div class="group relative">
                   <button class="flex items-center py-2">
                     SPA
@@ -94,7 +96,6 @@
                     </div>
                   </div>
                 </div>
-
                 <a
                   href="restaurant.html"
                   class="relative py-2 after:absolute after:bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full"
@@ -107,9 +108,9 @@
                 >
               </div>
             </div>
-
+            <!-- Kontakt-knapp och knapp för att öppna dropdown-menyn -->
             <div
-              class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+              class="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6"
             >
               <div class="hidden sm:flex sm:items-center">
                 <a
@@ -118,7 +119,7 @@
                   >KONTAKT</a
                 >
               </div>
-              <!-- Knapp för dropdown-meny för mindre skärmar -->
+              <!-- Knapp för dropdown-meny som endast visas på mindre skärmar -->
               <div class="lg:hidden">
                 <button
                   type="button"
@@ -132,7 +133,7 @@
               </div>
             </div>
           </div>
-          <!-- Dropdown-meny, visa/dölj -->
+          <!-- Dropdown-meny, öppnas och stängs när man trycker på knappen -->
           <div
             class="absolute inset-x-0 mx-3 mt-2 hidden bg-zinc-800 font-medium lg:hidden"
             id="mobile-menu"
@@ -148,7 +149,7 @@
                 class="block rounded-md px-3 py-2 text-base hover:bg-zinc-200 hover:font-bold hover:text-black"
                 >HOTELLRUM</a
               >
-              <!-- Undermeny inuti dropdown-menyn -->
+              <!-- Undermeny inuti dropdown-menyn, öppnas genom att trycka på Spa-knappen -->
               <div class="relative">
                 <button
                   class="mobile-dropdown-trigger flex w-full items-center justify-between rounded-md px-3 py-2 text-left text-base font-medium hover:bg-zinc-200 hover:font-bold hover:text-black"
@@ -187,7 +188,7 @@
                 class="block rounded-md px-3 py-2 text-base hover:bg-zinc-200 hover:font-bold hover:text-black"
                 >ÄVENTYR</a
               >
-              <!-- Kontakt-knapp -->
+              <!-- Kontakt-knappen placeras inuti dropdown-menyn på mindre skärmar -->
               <div
                 class="mt-2 flex items-center justify-center border-t-2 border-zinc-400 pt-4 sm:hidden"
               >
@@ -201,7 +202,7 @@
           </div>
         </nav>
       </header>
-      <!-- Hero -->
+      <!-- Hero-sektion, storleken skalas responsivt -->
       <div class="flex h-96 flex-col items-center justify-center">
         <div class="flex w-64 flex-col gap-4 text-center sm:w-125">
           <h1
@@ -213,19 +214,11 @@
             Spendera dagen i vår spa-avdelning för att ladda batterierna och ge
             kroppen lite extra omtanke.
           </p>
-          <!-- <a
-            class="btn mx-auto self-start border-0 bg-white px-8 py-4 text-3xl transition duration-700 ease-in-out hover:scale-110"
-            href="rooms.html"
-            >KNAPP</a
-          > -->
         </div>
       </div>
-      <!--       <div class="flex justify-center">
-        <i class="fa-solid fa-chevron-down fa-2xl" style="color: #ffffff"></i>
-      </div> -->
     </div>
     <main class="m-4 sm:m-6 md:m-8 lg:m-10">
-      <!-- Behållare -->
+      <!-- Behållare för cards, använder flexbox -->
       <div class="cards-gap spacing-bottom flex flex-col">
         <!-- Card 1: Pooler -->
         <div class="flex flex-col md:flex-row">
@@ -248,6 +241,7 @@
           </div>
         </div>
         <!-- Card 2: Bastu -->
+        <!-- flex-row-reverse placerar bilden till höger om texten på bredare skärmar -->
         <div class="flex flex-col md:flex-row-reverse">
           <img
             class="card-img md:ml-5 lg:w-1/2"
@@ -282,11 +276,11 @@
           </div>
         </div>
       </div>
-
-      <!-- Länk till behandlingar -->
+      <!-- Sektion som länkar till behandlingar -->
       <div
         class="spacing-bottom relative flex w-full flex-col items-center rounded-lg bg-[url(images/treatment-room.webp)] bg-cover bg-center bg-no-repeat text-white"
       >
+        <!-- Använder backdrop-blur för att lägga på ett filter som gör bakgrundsbilden suddig -->
         <div
           class="flex h-full w-full flex-col items-center gap-8 rounded-lg py-15 backdrop-blur-xs"
         >
@@ -307,11 +301,12 @@
           </div>
         </div>
       </div>
-
-      <!-- Behållare för galleri -->
+      <!-- Behållare för galleri, använder columns -->
       <div class="flex flex-col">
         <h2 class="mb-10 text-center text-4xl font-semibold">Galleri</h2>
+        <!-- columns-3xs ser till att bilderna inte blir för smala genom att visa en eller två kolumner -->
         <div class="columns-3xs gap-8 md:columns-3">
+          <!-- aspect anger vilken form bilderna ska visas i, t.ex. fyrkant -->
           <img
             class="block aspect-3/2 object-cover"
             src="images/woman-in-pool-sm.webp"
@@ -363,16 +358,20 @@
     <footer
       class="flex w-full flex-col items-start justify-between bg-zinc-800 px-4 py-10 text-zinc-100 sm:px-6 md:px-8 lg:px-10"
     >
+      <!-- 
+       Placerar elementen med flexbox/grid och använder row-start och col-start
+       på varje sektion för att flytta runt dessa beroende på skärmens bredd
+       -->
       <div
         class="flex w-full flex-col items-center gap-10 md:grid md:grid-cols-2 lg:items-start xl:grid-cols-3"
       >
-        <!-- Logga -->
+        <!-- Logotyp -->
         <a
           class="font-barlow text-center text-5xl font-medium text-white lg:text-start"
           href="index.html"
           >SALTSTONE HOTEL</a
         >
-        <!-- Boka nu-knapp -->
+        <!-- CTA-knapp -->
         <div
           class="my-4 transition duration-700 ease-in-out hover:scale-110 sm:mx-auto md:my-auto lg:col-start-3 lg:row-start-1 lg:ml-0 xl:col-start-3 xl:row-start-3 xl:my-0 xl:justify-self-end"
         >
@@ -384,7 +383,7 @@
         <nav
           class="flex flex-col items-center md:col-start-1 md:row-span-2 md:row-start-2 lg:items-start"
         >
-          <h4 class="text-xl font-semibold text-lime-600">NAVIGATION</h4>
+          <h3 class="text-xl font-semibold text-lime-600">NAVIGATION</h3>
           <ul class="flex flex-col items-center lg:items-start">
             <li class="pt-3">
               <a class="flex transition hover:translate-x-1" href="index.html"
@@ -487,14 +486,15 @@
           <a class="flex transition hover:translate-x-1" href="">Cookies</a>
         </div>
       </div>
+      <!-- Lögger till en linje för att dela upp innehållet -->
       <div class="mt-15 w-full border-t-1">
         <p class="mt-10 text-center lg:text-start">© 2025 Saltstone Hotel</p>
       </div>
     </footer>
     <!--
-    Kod hör ihop med header-navigationen och är hämtad från: 
-    https://tailwindflex.com/@rajesh-maheshwari/navbar-with-sub-menus 
-    -->
+     Kod hör ihop med header-navigationen och är hämtad från: 
+     https://tailwindflex.com/@rajesh-maheshwari/navbar-with-sub-menus 
+     -->
     <script>
       // Öppnar/stänger dropdown-menyn
       document
