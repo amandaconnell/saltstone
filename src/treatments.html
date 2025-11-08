@@ -361,26 +361,30 @@
       </div>
     </main>
     <footer
-      class="flex flex-col items-center justify-center bg-zinc-800 py-10 text-white"
+      class="flex w-full flex-col items-start justify-between bg-zinc-800 px-4 py-10 text-zinc-100 sm:px-6 md:px-8 lg:px-10"
     >
       <div
-        class="flex flex-col items-center gap-10 md:grid md:grid-cols-2 lg:items-start xl:gap-x-30 2xl:gap-x-50"
+        class="flex w-full flex-col items-center gap-10 md:grid md:grid-cols-2 lg:items-start xl:grid-cols-3"
       >
         <!-- Logga -->
-        <a class="font-barlow text-5xl font-medium" href="index.html"
+        <a
+          class="font-barlow text-center text-5xl font-medium text-white lg:text-start"
+          href="index.html"
           >SALTSTONE HOTEL</a
         >
         <!-- Boka nu-knapp -->
         <div
-          class="my-10 transition duration-700 ease-in-out hover:scale-110 sm:m-auto lg:col-start-3 lg:row-start-1 lg:m-0 lg:justify-self-end"
+          class="my-4 transition duration-700 ease-in-out hover:scale-110 sm:mx-auto md:my-auto lg:col-start-3 lg:row-start-1 lg:ml-0 xl:col-start-3 xl:row-start-3 xl:my-0 xl:justify-self-end"
         >
-          <a class="btn px-6 py-3 text-2xl" href="rooms.html">BOKA RUM</a>
+          <a class="btn px-6 py-3 text-2xl text-white" href="rooms.html"
+            >BOKA RUM</a
+          >
         </div>
         <!-- Sidnavigation -->
         <nav
           class="flex flex-col items-center md:col-start-1 md:row-span-2 md:row-start-2 lg:items-start"
         >
-          <h4 class="text-xl font-semibold text-lime-700">NAVIGATION</h4>
+          <h4 class="text-xl font-semibold text-lime-600">NAVIGATION</h4>
           <ul class="flex flex-col items-center lg:items-start">
             <li class="pt-3">
               <a class="flex transition hover:translate-x-1" href="index.html"
@@ -424,7 +428,7 @@
         <div
           class="flex flex-col items-center lg:col-start-2 lg:row-start-2 lg:grid"
         >
-          <h4 class="text-xl font-semibold text-lime-700">KONTAKT</h4>
+          <h4 class="text-xl font-semibold text-lime-600">KONTAKT</h4>
           <p class="pt-3">+46 98 765 43 21</p>
           <p class="pt-3">
             <a
@@ -438,7 +442,7 @@
         <div
           class="flex flex-col items-center lg:col-start-2 lg:row-start-3 lg:grid"
         >
-          <h4 class="text-xl font-semibold text-lime-700">HITTA HIT</h4>
+          <h4 class="text-xl font-semibold text-lime-600">HITTA HIT</h4>
           <p class="pt-3">Skogalundsvägen 106</p>
           <p class="pt-3">654 32 Aspdalen</p>
         </div>
@@ -446,11 +450,11 @@
         <div
           class="flex gap-10 py-5 md:flex-col md:items-center lg:col-start-3 lg:row-start-2 lg:grid lg:pt-0"
         >
-          <h4 class="hidden text-xl font-semibold text-lime-700 md:inline">
+          <h4 class="hidden text-xl font-semibold text-lime-600 md:inline">
             FÖLJ OSS
           </h4>
           <!-- Ikoner -->
-          <div class="flex md:gap-5">
+          <div class="flex gap-4 text-white">
             <i
               class="fa-brands fa-facebook fa-2xl cursor-pointer transition duration-400 ease-in-out hover:scale-120"
               ><a href="#"></a
@@ -471,9 +475,9 @@
         </div>
         <!-- Övriga länkar -->
         <div
-          class="flex gap-8 md:flex-col md:items-center md:gap-3 lg:col-start-3 lg:grid"
+          class="flex gap-8 md:flex-col md:items-center md:gap-3 lg:col-start-3 lg:grid xl:col-start-4 xl:row-start-2"
         >
-          <h4 class="hidden text-xl font-semibold text-lime-700 md:inline">
+          <h4 class="hidden text-xl font-semibold text-lime-600 md:inline">
             INFORMATION
           </h4>
           <a class="flex transition hover:translate-x-1" href=""
@@ -483,7 +487,9 @@
           <a class="flex transition hover:translate-x-1" href="">Cookies</a>
         </div>
       </div>
-      <p class="mt-15 text-center">© 2025 Saltstone Hotel</p>
+      <div class="mt-15 w-full border-t-1">
+        <p class="mt-10 text-center lg:text-start">© 2025 Saltstone Hotel</p>
+      </div>
     </footer>
     <!--
     Kod hör ihop med header-navigationen och är hämtad från: 
