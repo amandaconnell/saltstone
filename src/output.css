@@ -354,9 +354,6 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .aspect-3\/2 {
     aspect-ratio: 3/2;
   }
@@ -365,9 +362,6 @@
   }
   .aspect-square {
     aspect-ratio: 1 / 1;
-  }
-  .h-8 {
-    height: calc(var(--spacing) * 8);
   }
   .h-8\/9 {
     height: calc(8/9 * 100%);
@@ -384,9 +378,6 @@
   .h-screen {
     height: 100vh;
   }
-  .w-2 {
-    width: calc(var(--spacing) * 2);
-  }
   .w-2\/3 {
     width: calc(2/3 * 100%);
   }
@@ -395,9 +386,6 @@
   }
   .w-64 {
     width: calc(var(--spacing) * 64);
-  }
-  .w-\[100px\] {
-    width: 100px;
   }
   .w-\[200px\] {
     width: 200px;
@@ -408,9 +396,6 @@
   .flex-none {
     flex: none;
   }
-  .flex-grow {
-    flex-grow: 1;
-  }
   .grow {
     flex-grow: 1;
   }
@@ -420,17 +405,8 @@
   .border-collapse {
     border-collapse: collapse;
   }
-  .transform {
-    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
-  }
-  .columns-3 {
-    columns: 3;
   }
   .columns-3xs {
     columns: var(--container-3xs);
@@ -586,155 +562,38 @@
   .bg-zinc-800 {
     background-color: var(--color-zinc-800);
   }
-  .bg-\[url\(images\/\.jpg\)\] {
-    background-image: url(images/.jpg);
-  }
-  .bg-\[url\(images\/activities\.jpg\)\] {
-    background-image: url(images/activities.jpg);
-  }
-  .bg-\[url\(images\/adventures-hero-lg\.jpg\)\] {
-    background-image: url(images/adventures-hero-lg.jpg);
-  }
-  .bg-\[url\(images\/adventures-hero\.jpg\)\] {
-    background-image: url(images/adventures-hero.jpg);
-  }
   .bg-\[url\(images\/adventures-hero\.webp\)\] {
     background-image: url(images/adventures-hero.webp);
-  }
-  .bg-\[url\(images\/adventures\.jpg\)\] {
-    background-image: url(images/adventures.jpg);
-  }
-  .bg-\[url\(images\/adventures2\.jpg\)\] {
-    background-image: url(images/adventures2.jpg);
-  }
-  .bg-\[url\(images\/home-bg\.jpg\)\] {
-    background-image: url(images/home-bg.jpg);
-  }
-  .bg-\[url\(images\/home-hero\.jpg\)\] {
-    background-image: url(images/home-hero.jpg);
   }
   .bg-\[url\(images\/home-hero\.webp\)\] {
     background-image: url(images/home-hero.webp);
   }
-  .bg-\[url\(images\/hotel2\.jpg\)\] {
-    background-image: url(images/hotel2.jpg);
-  }
-  .bg-\[url\(images\/hotel4\.jpg\)\] {
-    background-image: url(images/hotel4.jpg);
-  }
-  .bg-\[url\(images\/restaurant-hero-sm\.jpg\)\] {
-    background-image: url(images/restaurant-hero-sm.jpg);
-  }
   .bg-\[url\(images\/restaurant-hero-sm\.webp\)\] {
     background-image: url(images/restaurant-hero-sm.webp);
-  }
-  .bg-\[url\(images\/restaurant-hero\.jpg\)\] {
-    background-image: url(images/restaurant-hero.jpg);
-  }
-  .bg-\[url\(images\/restaurant-hero2\.jpg\)\] {
-    background-image: url(images/restaurant-hero2.jpg);
-  }
-  .bg-\[url\(images\/restaurant-hero3\.jpg\)\] {
-    background-image: url(images/restaurant-hero3.jpg);
-  }
-  .bg-\[url\(images\/restaurant-hero4\.jpg\)\] {
-    background-image: url(images/restaurant-hero4.jpg);
-  }
-  .bg-\[url\(images\/restaurant-heromd\.jpg\)\] {
-    background-image: url(images/restaurant-heromd.jpg);
-  }
-  .bg-\[url\(images\/restaurant-herp2\.jpg\)\] {
-    background-image: url(images/restaurant-herp2.jpg);
-  }
-  .bg-\[url\(images\/restaurant\.jpg\)\] {
-    background-image: url(images/restaurant.jpg);
-  }
-  .bg-\[url\(images\/restaurant3\.jpg\)\] {
-    background-image: url(images/restaurant3.jpg);
-  }
-  .bg-\[url\(images\/rooms-hero\.jpg\)\] {
-    background-image: url(images/rooms-hero.jpg);
   }
   .bg-\[url\(images\/rooms-hero\.webp\)\] {
     background-image: url(images/rooms-hero.webp);
   }
-  .bg-\[url\(images\/rooms5\.jpg\)\] {
-    background-image: url(images/rooms5.jpg);
-  }
-  .bg-\[url\(images\/spa-hero\.jpg\)\] {
-    background-image: url(images/spa-hero.jpg);
-  }
   .bg-\[url\(images\/spa-hero\.webp\)\] {
     background-image: url(images/spa-hero.webp);
-  }
-  .bg-\[url\(images\/spa3\.jpg\)\] {
-    background-image: url(images/spa3.jpg);
-  }
-  .bg-\[url\(images\/spa4\.jpg\)\] {
-    background-image: url(images/spa4.jpg);
-  }
-  .bg-\[url\(images\/spa5\.jpg\)\] {
-    background-image: url(images/spa5.jpg);
-  }
-  .bg-\[url\(images\/spah\.jpg\)\] {
-    background-image: url(images/spah.jpg);
-  }
-  .bg-\[url\(images\/treatment-room\.jpg\)\] {
-    background-image: url(images/treatment-room.jpg);
   }
   .bg-\[url\(images\/treatment-room\.webp\)\] {
     background-image: url(images/treatment-room.webp);
   }
-  .bg-\[url\(images\/treatments-hero-sm\.jpg\)\] {
-    background-image: url(images/treatments-hero-sm.jpg);
-  }
-  .bg-\[url\(images\/treatments-hero\.jpg\)\] {
-    background-image: url(images/treatments-hero.jpg);
-  }
   .bg-\[url\(images\/treatments-hero\.webp\)\] {
     background-image: url(images/treatments-hero.webp);
-  }
-  .bg-\[url\(images\/treatments\.jpg\)\] {
-    background-image: url(images/treatments.jpg);
   }
   .bg-cover {
     background-size: cover;
   }
-  .bg-bottom {
-    background-position: bottom;
-  }
-  .bg-bottom-left {
-    background-position: left bottom;
-  }
-  .bg-bottom-right {
-    background-position: right bottom;
-  }
   .bg-center {
     background-position: center;
-  }
-  .bg-position-\[25\%\] {
-    background-position: 25%;
-  }
-  .bg-position-\[75\%\] {
-    background-position: 75%;
-  }
-  .bg-top {
-    background-position: top;
-  }
-  .bg-top-left {
-    background-position: left top;
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
-  .object-contain {
-    object-fit: contain;
-  }
   .object-cover {
     object-fit: cover;
-  }
-  .object-fill {
-    object-fit: fill;
   }
   .p-1 {
     padding: calc(var(--spacing) * 1);
@@ -744,9 +603,6 @@
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
-  }
-  .p-9 {
-    padding: calc(var(--spacing) * 9);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -874,55 +730,21 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .shadow-md\/15 {
     --tw-shadow-alpha: 15%;
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 15%)), 0 2px 4px -2px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 15%));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  .shadow-md {
-    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .brightness-75 {
-    --tw-brightness: brightness(75%);
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
   .brightness-110 {
     --tw-brightness: brightness(110%);
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
-  .brightness-125 {
-    --tw-brightness: brightness(125%);
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
-  .saturate-50 {
-    --tw-saturate: saturate(50%);
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
-  .saturate-75 {
-    --tw-saturate: saturate(75%);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .saturate-80 {
     --tw-saturate: saturate(80%);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
-  .filter {
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
   .backdrop-blur-xs {
     --tw-backdrop-blur: blur(var(--blur-xs));
-    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-  }
-  .backdrop-filter {
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
@@ -955,9 +777,6 @@
   .text-shadow-lg\/50 {
     --tw-text-shadow-alpha: 50%;
     text-shadow: 0px 1px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 50%)), 0px 3px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 50%)), 0px 4px 8px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 50%));
-  }
-  .text-shadow-lg {
-    text-shadow: 0px 1px 2px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1)), 0px 3px 2px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1)), 0px 4px 8px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1));
   }
   .group-hover\:visible {
     &:is(:where(.group):hover *) {
@@ -1198,19 +1017,9 @@
       gap: calc(var(--spacing) * 3);
     }
   }
-  .sm\:bg-\[url\(images\/treatments-hero-sm\.jpg\)\] {
-    @media (width >= 40rem) {
-      background-image: url(images/treatments-hero-sm.jpg);
-    }
-  }
   .sm\:bg-\[url\(images\/treatments-hero-sm\.webp\)\] {
     @media (width >= 40rem) {
       background-image: url(images/treatments-hero-sm.webp);
-    }
-  }
-  .sm\:bg-\[url\(images\/treatments-hero\.jpg\)\] {
-    @media (width >= 40rem) {
-      background-image: url(images/treatments-hero.jpg);
     }
   }
   .sm\:object-cover {
@@ -1368,24 +1177,9 @@
       gap: calc(var(--spacing) * 5);
     }
   }
-  .md\:bg-\[url\(images\/restaurant-hero-md\.jpg\)\] {
-    @media (width >= 48rem) {
-      background-image: url(images/restaurant-hero-md.jpg);
-    }
-  }
   .md\:bg-\[url\(images\/restaurant-hero-md\.webp\)\] {
     @media (width >= 48rem) {
       background-image: url(images/restaurant-hero-md.webp);
-    }
-  }
-  .md\:bg-\[url\(images\/restaurant-heromd2\.jpg\)\] {
-    @media (width >= 48rem) {
-      background-image: url(images/restaurant-heromd2.jpg);
-    }
-  }
-  .md\:bg-\[url\(images\/spa4\.jpg\)\] {
-    @media (width >= 48rem) {
-      background-image: url(images/spa4.jpg);
     }
   }
   .md\:text-left {
@@ -1458,11 +1252,6 @@
       width: calc(1/3 * 100%);
     }
   }
-  .lg\:w-full {
-    @media (width >= 64rem) {
-      width: 100%;
-    }
-  }
   .lg\:grid-cols-2 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1488,34 +1277,9 @@
       justify-self: flex-end;
     }
   }
-  .lg\:bg-\[url\(images\/activities\.jpg\)\] {
-    @media (width >= 64rem) {
-      background-image: url(images/activities.jpg);
-    }
-  }
-  .lg\:bg-\[url\(images\/adventures-hero-lg\.jpg\)\] {
-    @media (width >= 64rem) {
-      background-image: url(images/adventures-hero-lg.jpg);
-    }
-  }
   .lg\:bg-\[url\(images\/adventures-hero-lg\.webp\)\] {
     @media (width >= 64rem) {
       background-image: url(images/adventures-hero-lg.webp);
-    }
-  }
-  .lg\:bg-\[url\(images\/adventures-lg2\.jpg\)\] {
-    @media (width >= 64rem) {
-      background-image: url(images/adventures-lg2.jpg);
-    }
-  }
-  .lg\:bg-\[url\(images\/adventures-md\.jpg\)\] {
-    @media (width >= 64rem) {
-      background-image: url(images/adventures-md.jpg);
-    }
-  }
-  .lg\:bg-\[url\(images\/restaurant-hero-lg\.jpg\)\] {
-    @media (width >= 64rem) {
-      background-image: url(images/restaurant-hero-lg.jpg);
     }
   }
   .lg\:bg-\[url\(images\/restaurant-hero-lg\.webp\)\] {
@@ -1523,79 +1287,9 @@
       background-image: url(images/restaurant-hero-lg.webp);
     }
   }
-  .lg\:bg-\[url\(images\/restaurant-hero\.jpg\)\] {
-    @media (width >= 64rem) {
-      background-image: url(images/restaurant-hero.jpg);
-    }
-  }
-  .lg\:bg-\[url\(images\/restaurant-herolg\.jpg\)\] {
-    @media (width >= 64rem) {
-      background-image: url(images/restaurant-herolg.jpg);
-    }
-  }
-  .lg\:bg-\[url\(images\/restaurant-herolg2\.jpg\)\] {
-    @media (width >= 64rem) {
-      background-image: url(images/restaurant-herolg2.jpg);
-    }
-  }
-  .lg\:bg-\[url\(images\/restaurant-herolg3\.jpg\)\] {
-    @media (width >= 64rem) {
-      background-image: url(images/restaurant-herolg3.jpg);
-    }
-  }
-  .lg\:bg-\[url\(images\/restaurant-herolg4\.jpg\)\] {
-    @media (width >= 64rem) {
-      background-image: url(images/restaurant-herolg4.jpg);
-    }
-  }
-  .lg\:bg-\[url\(images\/restaurant3\.jpg\)\] {
-    @media (width >= 64rem) {
-      background-image: url(images/restaurant3.jpg);
-    }
-  }
-  .lg\:bg-\[url\(images\/spa-hero-lg\.jpg\)\] {
-    @media (width >= 64rem) {
-      background-image: url(images/spa-hero-lg.jpg);
-    }
-  }
   .lg\:bg-\[url\(images\/spa-hero-lg\.webp\)\] {
     @media (width >= 64rem) {
       background-image: url(images/spa-hero-lg.webp);
-    }
-  }
-  .lg\:bg-\[url\(images\/spa2\.jpg\)\] {
-    @media (width >= 64rem) {
-      background-image: url(images/spa2.jpg);
-    }
-  }
-  .lg\:bg-\[url\(images\/spa4\.jpg\)\] {
-    @media (width >= 64rem) {
-      background-image: url(images/spa4.jpg);
-    }
-  }
-  .lg\:bg-\[url\(images\/spah2\.jpg\)\] {
-    @media (width >= 64rem) {
-      background-image: url(images/spah2.jpg);
-    }
-  }
-  .lg\:bg-\[url\(images\/spah22\.jpg\)\] {
-    @media (width >= 64rem) {
-      background-image: url(images/spah22.jpg);
-    }
-  }
-  .lg\:bg-\[url\(images\/treatments-hero\.jpg\)\] {
-    @media (width >= 64rem) {
-      background-image: url(images/treatments-hero.jpg);
-    }
-  }
-  .lg\:bg-cover {
-    @media (width >= 64rem) {
-      background-size: cover;
-    }
-  }
-  .lg\:bg-center {
-    @media (width >= 64rem) {
-      background-position: center;
     }
   }
   .lg\:pt-0 {
@@ -1656,104 +1350,14 @@
       column-gap: calc(var(--spacing) * 30);
     }
   }
-  .xl\:bg-\[url\(images\/spa3\.jpg\)\] {
-    @media (width >= 80rem) {
-      background-image: url(images/spa3.jpg);
-    }
-  }
-  .xl\:bg-\[url\(images\/treatments-hero\.jpg\)\] {
-    @media (width >= 80rem) {
-      background-image: url(images/treatments-hero.jpg);
-    }
-  }
-  .xl\:bg-\[url\(images\/treatments\.jpg\)\] {
-    @media (width >= 80rem) {
-      background-image: url(images/treatments.jpg);
-    }
-  }
-  .xl\:bg-cover {
-    @media (width >= 80rem) {
-      background-size: cover;
-    }
-  }
-  .xl\:bg-center {
-    @media (width >= 80rem) {
-      background-position: center;
-    }
-  }
   .\32 xl\:gap-x-50 {
     @media (width >= 96rem) {
       column-gap: calc(var(--spacing) * 50);
     }
   }
-  .\32 xl\:bg-\[url\(images\/restaurant-hero\.jpg\)\] {
-    @media (width >= 96rem) {
-      background-image: url(images/restaurant-hero.jpg);
-    }
-  }
-  .\32 xl\:bg-\[url\(images\/restaurant-hero4\.jpg\)\] {
-    @media (width >= 96rem) {
-      background-image: url(images/restaurant-hero4.jpg);
-    }
-  }
-  .\32 xl\:bg-\[url\(images\/restaurant3\.jpg\)\] {
-    @media (width >= 96rem) {
-      background-image: url(images/restaurant3.jpg);
-    }
-  }
-  .\32 xl\:bg-\[url\(images\/spa-hero-2xl\.jpg\)\] {
-    @media (width >= 96rem) {
-      background-image: url(images/spa-hero-2xl.jpg);
-    }
-  }
   .\32 xl\:bg-\[url\(images\/spa-hero-2xl\.webp\)\] {
     @media (width >= 96rem) {
       background-image: url(images/spa-hero-2xl.webp);
-    }
-  }
-  .\32 xl\:bg-\[url\(images\/spa3\.jpg\)\] {
-    @media (width >= 96rem) {
-      background-image: url(images/spa3.jpg);
-    }
-  }
-  .\32 xl\:bg-\[url\(images\/spahlg\.jpg\)\] {
-    @media (width >= 96rem) {
-      background-image: url(images/spahlg.jpg);
-    }
-  }
-  .\32 xl\:bg-contain {
-    @media (width >= 96rem) {
-      background-size: contain;
-    }
-  }
-  .\32 xl\:bg-cover {
-    @media (width >= 96rem) {
-      background-size: cover;
-    }
-  }
-  .\32 xl\:bg-\[25\%\] {
-    @media (width >= 96rem) {
-      background-position: 25%;
-    }
-  }
-  .\32 xl\:bg-\[75\%\] {
-    @media (width >= 96rem) {
-      background-position: 75%;
-    }
-  }
-  .\32 xl\:bg-center {
-    @media (width >= 96rem) {
-      background-position: center;
-    }
-  }
-  .\32 xl\:object-\[25\%\] {
-    @media (width >= 96rem) {
-      object-position: 25%;
-    }
-  }
-  .\32 xl\:object-\[75\%\] {
-    @media (width >= 96rem) {
-      object-position: 75%;
     }
   }
 }
@@ -1805,26 +1409,6 @@
     flex-direction: column;
     padding-block: calc(var(--spacing) * 5);
   }
-}
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
 }
 @property --tw-space-y-reverse {
   syntax: "*";
@@ -1909,11 +1493,6 @@
   syntax: "*";
   inherits: false;
   initial-value: 0 0 #0000;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-blur {
   syntax: "*";
@@ -2056,14 +1635,29 @@
   inherits: false;
   initial-value: 1;
 }
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-rotate-x: initial;
-      --tw-rotate-y: initial;
-      --tw-rotate-z: initial;
-      --tw-skew-x: initial;
-      --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
       --tw-space-x-reverse: 0;
       --tw-border-style: solid;
@@ -2082,7 +1676,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
@@ -2116,6 +1709,11 @@
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
     }
   }
 }
