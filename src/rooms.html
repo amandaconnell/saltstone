@@ -37,7 +37,7 @@
       Kod hämtad från: https://tailwindflex.com/@rajesh-maheshwari/navbar-with-sub-menus
       Jag har modifierat innehåll & utseende
        -->
-      <header class="px-5 py-3 text-white">
+      <header class="mx-4 py-4 text-white sm:mx-6 md:mx-8 lg:mx-10">
         <nav class="">
           <div class="relative flex items-center justify-between">
             <!-- Logga -->
@@ -225,11 +225,11 @@
         <i class="fa-solid fa-chevron-down fa-2xl" style="color: #ffffff"></i>
       </div> -->
     </div>
-    <main class="mx-10 mt-10 mb-5">
+    <main class="m-4 sm:m-6 md:m-8 lg:m-10">
       <!-- Cards filtrerade enligt typ av rum
       Kod hämtad från: https://www.w3schools.com/howto/howto_js_tabs.asp
       -->
-      <div class="ml-5 flex pb-5">
+      <div class="mb-4 flex sm:mb-6 md:mb-8 lg:mb-10">
         <!-- Knappar som styr vilket innehåll som visas -->
         <div
           class="rounded-full border p-1 shadow-md/15 max-sm:text-xs sm:text-sm"
@@ -258,19 +258,16 @@
       <!-- Card container -->
       <div
         id="cardContainer"
-        class="max-sm:flex max-sm:flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-3"
+        class="cards-gap flex flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-3"
       >
         <!-- Card 1: Enkel -->
-        <div
-          class="card sm:mb-10 sm:flex-row md:mb-5 md:flex-col"
-          data-category="single"
-        >
+        <div class="card sm:flex-row md:flex-col" data-category="single">
           <img
             src="images/single-bed-wood.webp"
             alt="Ett ljust rum med en träsäng med ljusa sängkläder."
             class="card-img sm:mr-5 sm:w-2/3 sm:object-cover md:w-full"
           />
-          <div class="card-body gap-1">
+          <div class="card-body gap-1 sm:py-6 md:pb-0">
             <h2 class="pb-2 text-xl font-semibold">Enkelrum</h2>
             <p class="flex items-center gap-3">
               <i class="fa-solid fa-ruler"></i> 15 km²
@@ -293,16 +290,13 @@
         </div>
 
         <!-- Card 2: Dubbel -->
-        <div
-          class="card sm:mb-10 sm:flex-row md:mb-5 md:flex-col"
-          data-category="double"
-        >
+        <div class="card sm:flex-row md:flex-col" data-category="double">
           <img
             src="images/double-bed-beige.webp"
             alt="Ett ljust rum med en beige tygklädd säng med ljusa sängkläder."
             class="card-img sm:mr-5 sm:w-2/3 sm:object-cover md:w-full"
           />
-          <div class="card-body gap-1">
+          <div class="card-body gap-1 sm:py-6 md:pb-0">
             <h2 class="pb-2 text-xl font-semibold">Dubbelrum</h2>
             <p class="flex items-center gap-3">
               <i class="fa-solid fa-ruler"></i> 20 km²
@@ -325,16 +319,13 @@
         </div>
 
         <!-- Card 3: Dubbel -->
-        <div
-          class="card sm:mb-10 sm:flex-row md:mb-5 md:flex-col"
-          data-category="double"
-        >
+        <div class="card sm:flex-row md:flex-col" data-category="double">
           <img
             src="images/double-bed-grey.webp"
             alt="Ett ljust rum med en grå kontinentalsäng med ljusa sängkläder."
             class="card-img sm:mr-5 sm:w-2/3 sm:object-cover md:w-full"
           />
-          <div class="card-body gap-1">
+          <div class="card-body gap-1 sm:py-6 md:pb-0">
             <h2 class="pb-2 text-xl font-semibold">Dubbelrum</h2>
             <p class="flex items-center gap-3">
               <i class="fa-solid fa-ruler"></i> 30 km²
@@ -357,16 +348,13 @@
         </div>
 
         <!-- Card 4: Enkel -->
-        <div
-          class="card sm:mb-10 sm:flex-row md:mb-5 md:flex-col"
-          data-category="single"
-        >
+        <div class="card sm:flex-row md:flex-col" data-category="single">
           <img
             src="images/single-bed-black.webp"
             alt="Ett ljust rum med en svart säng med svarta och vita sängkläder."
             class="card-img sm:mr-5 sm:w-2/3 sm:object-cover md:w-full"
           />
-          <div class="card-body gap-1">
+          <div class="card-body gap-1 sm:py-6 md:pb-0">
             <h2 class="pb-2 text-xl font-semibold">Enkelrum</h2>
             <p class="flex items-center gap-3">
               <i class="fa-solid fa-ruler"></i> 15 km²
@@ -389,16 +377,13 @@
         </div>
 
         <!-- Card 5: Enkel -->
-        <div
-          class="card sm:mb-10 sm:flex-row md:mb-5 md:flex-col"
-          data-category="single"
-        >
+        <div class="card sm:flex-row md:flex-col" data-category="single">
           <img
             src="images/single-bed-wood.webp"
             alt="Ett ljust rum med en träsäng med ljusa sängkläder."
             class="card-img sm:mr-5 sm:w-2/3 sm:object-cover md:w-full"
           />
-          <div class="card-body gap-1">
+          <div class="card-body gap-1 sm:py-6 md:pb-0">
             <h2 class="pb-2 text-xl font-semibold">Enkelrum</h2>
             <p class="flex items-center gap-3">
               <i class="fa-solid fa-ruler"></i> 15 km²
@@ -421,16 +406,13 @@
         </div>
 
         <!-- Card 6: Dubbel -->
-        <div
-          class="card sm:mb-10 sm:flex-row md:mb-5 md:flex-col"
-          data-category="double"
-        >
+        <div class="card sm:flex-row md:flex-col" data-category="double">
           <img
             src="images/single-bed-wood.webp"
             alt="Ett ljust rum med en träsäng med ljusa sängkläder."
             class="card-img sm:mr-5 sm:w-2/3 sm:object-cover md:w-full"
           />
-          <div class="card-body gap-1">
+          <div class="card-body gap-1 sm:py-6 md:pb-0">
             <h2 class="pb-2 text-xl font-semibold">Dubbelrum</h2>
             <p class="flex items-center gap-3">
               <i class="fa-solid fa-ruler"></i> 20 km²
@@ -453,16 +435,13 @@
         </div>
 
         <!-- Card 7: Dubbel -->
-        <div
-          class="card sm:mb-10 sm:flex-row md:mb-5 md:flex-col"
-          data-category="double"
-        >
+        <div class="card mb-0 sm:flex-row md:flex-col" data-category="double">
           <img
             src="images/double-bed-beige.webp"
             alt="Ett ljust rum med en beige tygklädd säng med ljusa sängkläder."
             class="card-img sm:mr-5 sm:w-2/3 sm:object-cover md:w-full"
           />
-          <div class="card-body gap-1">
+          <div class="card-body gap-1 sm:py-6 md:pb-0">
             <h2 class="pb-2 text-xl font-semibold">Dubbelrum</h2>
             <p class="flex items-center gap-3">
               <i class="fa-solid fa-ruler"></i> 40 km²
@@ -485,16 +464,13 @@
         </div>
 
         <!-- Card 8: Dubbel -->
-        <div
-          class="card sm:mb-10 sm:flex-row md:mb-5 md:flex-col"
-          data-category="double"
-        >
+        <div class="card mb-0 sm:flex-row md:flex-col" data-category="double">
           <img
             src="images/double-bed-beige-2.webp"
             alt="Ett ljust rum med en beige tygklädd säng med ljusa sängkläder."
             class="card-img sm:mr-5 sm:w-2/3 sm:object-cover md:w-full"
           />
-          <div class="card-body gap-1">
+          <div class="card-body gap-1 sm:py-6 md:pb-0">
             <h2 class="pb-2 text-xl font-semibold">Dubbelrum</h2>
             <p class="flex items-center gap-3">
               <i class="fa-solid fa-ruler"></i> 35 km²
