@@ -29,7 +29,9 @@
     ></script>
   </head>
   <body class="font-abel">
-    <div class="h-screen bg-[url(images/home-hero.webp)] bg-cover bg-no-repeat">
+    <div
+      class="h-125 bg-[url(images/home-hero.webp)] bg-cover bg-no-repeat md:h-screen"
+    >
       <!--
       Kod hämtad från: https://tailwindflex.com/@rajesh-maheshwari/navbar-with-sub-menus
       Jag har modifierat innehåll & utseende
@@ -39,7 +41,7 @@
           <div class="relative flex items-center justify-between">
             <!-- Logga -->
             <a
-              class="font-barlow mr-20 text-4xl font-medium text-shadow-lg/50 sm:mr-0 sm:text-5xl"
+              class="font-barlow mr-20 text-3xl font-medium text-shadow-lg/50 sm:mr-0 md:text-5xl"
               href="index.html"
             >
               SALTSTONE HOTEL
@@ -201,27 +203,27 @@
       </header>
       <!-- Hero -->
       <div
-        class="flex h-8/9 flex-col place-content-around content-between items-center gap-20"
+        class="flex h-5/6 flex-col place-content-around content-between items-center gap-20 md:h-8/9"
       >
         <div class="flex w-64 flex-col gap-4 sm:w-96">
           <h1
-            class="text-4xl font-semibold text-white text-shadow-lg/50 sm:text-6xl"
+            class="text-4xl font-semibold text-white text-shadow-lg/50 md:text-6xl"
           >
             En vistelse nära naturen
           </h1>
-          <p class="text-xl text-white text-shadow-lg/50 sm:text-2xl">
+          <p class="text-xl text-white text-shadow-lg/50 md:text-2xl">
             Lämna storstaden bakom dig och låt den friska bergsluften ge dig nya
             krafter. Med en stor spa-avdelning och en mängd utomhusaktiviteter
             är Saltstone Hotel en oas för kropp och själ!
           </p>
           <a
-            class="btn mx-auto mt-6 self-start border-0 bg-white px-6 py-3 text-2xl transition duration-700 ease-in-out hover:scale-110 sm:px-8 sm:py-4 sm:text-3xl"
+            class="btn mx-auto mt-6 self-start border-0 bg-white px-6 py-3 text-2xl transition duration-700 ease-in-out hover:scale-110 md:px-8 md:py-4 md:text-3xl"
             href="rooms.html"
             >BOKA RUM</a
           >
         </div>
       </div>
-      <div class="flex justify-center">
+      <div class="invisible flex justify-center md:visible">
         <i
           class="fa-solid fa-chevron-down fa-2xl mt-2 sm:mt-0"
           style="color: #ffffff"
@@ -238,7 +240,7 @@
             src="images/bedside-lamp.webp"
             alt="Ett mörkt rum med en lampa som lyser på ett sängbord framför ett fönster. Kanten på en säng skymtas till höger."
           />
-          <div class="flex h-full flex-col py-5">
+          <div class="card-body">
             <h2 class="pb-2 text-xl font-semibold">En god natts sömn</h2>
             <p class="pb-5">
               Alla våra rum är designade för att ge dig gott om utrymme att
@@ -262,7 +264,7 @@
             src="images/woman-in-pool.webp"
             alt="En kvinna simmar eller ligger på rygg i en väldigt blå pool."
           />
-          <div class="flex h-full flex-col py-5">
+          <div class="card-body">
             <h2 class="pb-2 text-xl font-semibold">Unna dig en stund av ro</h2>
             <p class="pb-5">
               Längtar du efter en chans att varva ned? Som gäst hos oss har du
@@ -286,7 +288,7 @@
             src="images/food-in-pan.webp"
             alt="Mat i en stekpanna toppad med salladsblad och groddar."
           />
-          <div class="flex h-full flex-col py-5">
+          <div class="card-body">
             <h2 class="pb-2 text-xl font-semibold">Mat för alla sinnen</h2>
             <p class="pb-5">
               I Restaurang Orangeriet har vi en ständigt varierande meny med
@@ -310,7 +312,7 @@
             src="images/woman-nature-walk.webp"
             alt="En kvinna promenerar i naturen. Det är dimma i luften. I förgrunden syns två stora trädstammar och stenar täckta med grön mossa."
           />
-          <div class="flex h-full flex-col py-5">
+          <div class="card-body">
             <h2 class="pb-2 text-xl font-semibold">Utforska omgivningen</h2>
             <p class="pb-5">
               Att spendera tid i naturen är ett måste när man bor på Saltstone
@@ -328,7 +330,9 @@
         </div>
       </div>
       <!-- Behållare för omdömen -->
-      <h2 class="pb-10 text-3xl font-semibold">Vad våra gäster säger</h2>
+      <h2 class="pb-10 text-center text-3xl font-semibold">
+        Vad våra gäster säger
+      </h2>
       <div class="flex flex-col gap-8 pb-10 sm:grid sm:grid-cols-3">
         <!-- Omödme 1: Nora -->
         <div
@@ -383,22 +387,22 @@
         </div>
       </div>
       <!-- Behållare för nyhetsbrev -->
-      <div class="flex flex-col gap-5 pb-10 md:flex-row">
+      <div class="flex flex-col gap-5 pb-10 md:flex-row-reverse">
         <img
           class="rounded-lg md:w-1/2"
           src="images/hotel-building.webp"
           alt=""
         />
         <div class="flex flex-col justify-center gap-4 lg:mx-10">
-          <p class="text-2xl font-semibold">
+          <p class="text-2xl font-semibold lg:text-3xl">
             Anmäl dig till vårt nyhetsbrev för att ta del av unika erbjudanden
             och hålla dig uppdaterad om våra senaste event!
           </p>
-          <form class="flex flex-col gap-2">
+          <form class="flex flex-col gap-2 lg:flex-row">
             <input
               type="email"
               placeholder="Email"
-              class="rounded-lg border border-gray-400 p-1"
+              class="flex max-w-96 min-w-64 grow rounded-lg border border-gray-400 p-1"
             />
             <input
               type="submit"
